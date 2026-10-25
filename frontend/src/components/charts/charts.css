@@ -1,0 +1,61 @@
+.lc {
+  position: relative;
+  width: 100%;
+}
+.lc svg {
+  display: block;
+  overflow: visible;
+}
+.lc-grid {
+  stroke: var(--grid);
+  stroke-width: 1;
+}
+.lc-ref {
+  stroke: var(--axis);
+  stroke-width: 1;
+}
+.lc-tick {
+  fill: var(--muted);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.lc-xlabel {
+  fill: var(--faint);
+}
+.lc-marker {
+  stroke: rgba(242, 201, 76, 0.55);
+  stroke-width: 1;
+}
+.lc-marker-label {
+  fill: var(--gold);
+  font-size: 9.5px;
+  font-weight: 650;
+}
+.lc-cross {
+  stroke: rgba(255, 255, 255, 0.28);
+  stroke-width: 1;
+}
+.lc-empty {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 12px;
+  border: 1px dashed var(--line-2);
+  border-radius: 8px;
+}
+.lc-tip-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.lc-tip-row i {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+.lc-tip-row b {
+  margin-left: auto;
+  padding-left: 10px;
+  font-weight: 650;
+}

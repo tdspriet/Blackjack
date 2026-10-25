@@ -1,0 +1,118 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  min-width: 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.conn-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+.conn-dot.live {
+  background: var(--pos);
+}
+.conn-dot.mock {
+  background: var(--warn);
+}
+.conn-dot.warn {
+  background: var(--warn);
+  animation: pulse 1s ease-in-out infinite;
+}
+.mock-tag {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--warn);
+  border: 1px solid rgba(250, 178, 25, 0.35);
+  border-radius: 4px;
+  padding: 0 5px;
+  line-height: 16px;
+}
+.tb-spacer {
+  flex: 1;
+}
+.tb-help {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--line-2);
+  display: grid;
+  place-items: center;
+  color: var(--text-2);
+  cursor: default;
+  font-weight: 600;
+  margin-left: 4px;
+}
+.tb-help-pop {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 32px;
+  width: 320px;
+  padding: 12px 14px;
+  background: #16161b;
+  border: 1px solid var(--line-2);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-2);
+}
+.tb-help:hover .tb-help-pop,
+.tb-help:focus-within .tb-help-pop {
+  display: block;
+}
+.tb-help-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 8px;
+}
+.tb-help-title:first-child {
+  margin-top: 0;
+}
+.tb-help-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.boot {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 14px;
+  color: var(--muted);
+}
+.boot-spinner {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--panel-4);
+  border-top-color: var(--text-2);
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.3;
+  }
+}

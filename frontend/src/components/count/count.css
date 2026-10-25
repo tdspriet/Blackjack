@@ -1,0 +1,248 @@
+.sys-seg {
+  width: 100%;
+  display: flex;
+}
+.sys-seg button {
+  flex: 1;
+  padding: 0 3px;
+  white-space: nowrap;
+}
+.readout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+.ro-label {
+  font-size: 12px;
+  color: var(--muted);
+}
+.ro-value {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 2px;
+}
+.ro-line {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* shoe halves */
+.half {
+  margin-bottom: 12px;
+}
+.half:last-child {
+  margin-bottom: 0;
+}
+.half:not(.dealing) {
+  opacity: 0.6;
+}
+.half-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: 11.5px;
+}
+.half-name {
+  color: var(--text-2);
+}
+.half-state {
+  font-size: 11px;
+  color: var(--text-2);
+}
+.half-bar {
+  position: relative;
+  height: 8px;
+  border-radius: 4px;
+  background: #24242c;
+  overflow: visible;
+}
+.hb-seg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transition: width 300ms, left 300ms;
+}
+.hb-seg.burn {
+  background: #6a2a2a;
+  border-radius: 4px 0 0 4px;
+}
+.hb-seg.dealt {
+  background: var(--text-2);
+}
+.hb-seg.residue,
+.hb-seg.behind {
+  background: repeating-linear-gradient(45deg, #3a3a44 0 3px, #24242c 3px 6px);
+  border-radius: 0 4px 4px 0;
+}
+.hb-seg.waiting {
+  background: repeating-linear-gradient(90deg, #2e2e37 0 1px, #24242c 1px 4px);
+  border-radius: 4px;
+}
+.hb-cut {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  margin-left: -1px;
+  background: #e8403f;
+  border-radius: 1px;
+}
+.hb-cut span {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  color: #ff8a8a;
+  font-weight: 700;
+}
+.hb-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 10.5px;
+  color: var(--text-2);
+  margin-top: 6px;
+}
+.hb-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  border-radius: 2px;
+  margin-right: 4px;
+  vertical-align: -1px;
+}
+.hb-legend i.burn {
+  background: #7a2a2a;
+}
+.hb-legend i.dealt {
+  background: #a49aff;
+}
+.hb-legend i.behind {
+  background: repeating-linear-gradient(45deg, #4a4a55 0 2px, #24242c 2px 4px);
+}
+.hb-legend i.cutk {
+  background: #ff4646;
+  width: 3px;
+}
+.explain {
+  margin-top: 8px;
+  padding: 7px 9px;
+  border-radius: 7px;
+  background: rgba(155, 140, 255, 0.07);
+  border: 1px solid rgba(155, 140, 255, 0.18);
+  color: var(--text-2);
+}
+.explain b {
+  color: var(--text);
+}
+
+/* composition */
+.comp {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.comp-row {
+  display: grid;
+  grid-template-columns: 18px 58px 1fr 40px;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+}
+.comp-rank {
+  font-weight: 750;
+  text-align: center;
+}
+.comp-n {
+  text-align: right;
+}
+.comp-n small {
+  color: var(--faint);
+  margin-left: 1px;
+}
+.comp-track {
+  position: relative;
+  height: 10px;
+  background: var(--panel);
+  border-radius: 3px;
+}
+.comp-bar {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 2px;
+  transition: width 300ms, left 300ms;
+}
+.comp-pct {
+  text-align: right;
+  color: var(--text-2);
+  font-size: 11px;
+}
+
+/* analytics */
+.ev-table td:first-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ev-table tr.plus td {
+  background: rgba(60, 207, 127, 0.06);
+}
+.ev-flag {
+  height: 16px;
+  font-size: 9px;
+  padding: 0 5px;
+}
+.bust-bars {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
+  height: 92px;
+}
+.bb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+.bb-val {
+  font-size: 9.5px;
+  color: var(--muted);
+}
+.bb-track {
+  flex: 1;
+  width: 100%;
+  max-width: 22px;
+  display: flex;
+  align-items: flex-end;
+}
+.bb-bar {
+  width: 100%;
+  background: #4a6fa8;
+  border-radius: 4px 4px 0 0;
+  transition: height 300ms;
+}
+.bb-lab {
+  font-size: 10.5px;
+  font-weight: 650;
+  color: var(--text-2);
+}
+.bb.on .bb-bar {
+  background: var(--gold);
+}
+.bb.on .bb-val,
+.bb.on .bb-lab {
+  color: var(--gold);
+  font-weight: 750;
+}
+
+.ev-kv {
+  margin-top: 0;
+}

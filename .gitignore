@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+frontend/dist/
+.DS_Store
+*.egg-info/
+.pytest_cache/
+
+# reference material (proprietary download / large screenshots) — extracted rules live in docs/
+original/
+screens/
+
+# local artefacts
+.claude/
+docs/OFFICIAL_RULES_NL.txt

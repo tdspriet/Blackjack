@@ -1,0 +1,35 @@
+import type { GameConfig } from '../protocol'
+
+/** Copy of config/default.json (SPEC §3) used by the mock server. */
+export const DEFAULT_CONFIG: GameConfig = {
+  shoe: { num_decks: 8, split_halves: true, penetration: 0.75, cut_jitter: 8, burn_cards: 1 },
+  rules: {
+    blackjack_payout: 1.5,
+    dealer_hits_soft_17: false,
+    peek_on_ace: true,
+    peek_on_ten: false,
+    late_dealer_bj_takes: 'all',
+    double_any_two: true,
+    double_after_split: true,
+    max_splits: 1,
+    split_by_value: true,
+    split_aces_one_card: true,
+    charlie_cards: 6,
+    charlie_beats_dealer_bj: true,
+    insurance: true,
+    insurance_payout: 2.0,
+    surrender: false,
+    cashout: true,
+    cashout_rtp: 0.98,
+  },
+  limits: { main_min: 1, main_max: 5000, side_min: 1, side_max: 500, chips: [1, 2, 5, 10, 25, 100, 500, 1000] },
+  side_bets: {
+    perfect_pairs: { mixed: 6, coloured: 12, perfect: 25 },
+    twenty_one_plus_three: { flush: 5, straight: 10, three_of_a_kind: 30, straight_flush: 40, suited_trips: 100 },
+    crazy_7: { one: 5, pair_unsuited: 25, pair_suited: 150, three_unsuited: 500, three_suited: 2000 },
+    bust_bonus: { '3': 1, '4': 2, '5': 9, '6': 50, '7': 100, '8': 250 },
+    bust_bonus_push_on_player_blackjack: true,
+  },
+  crowd: { enabled: true, size: 250, min_hitters: 1, mix: { basic: 0.75, cautious: 0.12, dealer_mimic: 0.1, reckless: 0.03 } },
+  bankroll: { start: 1000 },
+}
