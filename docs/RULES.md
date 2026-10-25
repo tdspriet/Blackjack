@@ -238,6 +238,10 @@ Other observations:
 * Basic strategy never insures; the HiLo agent insures at TC ≥ +3 (solver: break-even at +3.4 for an infinite
   deck shifted along the Hi-Lo direction).
 
+Baseline counter (`HiLoAgent` without side bets: basic + the indices of §2, insurance at TC ≥ +3, 1–12 unit
+spread by floor(TC): ≥2→2, ≥3→4, ≥4→6, ≥5→8, ≥6→12), 20 M rounds: **+0.0035 units per round** (± 0.0005;
++0.22 % of the amount wagered) with the two-halves shoe, +0.0040 with a plain 8-deck shoe at 75 %.
+
 ### 3.3 Cash-out fair values
 Offer = 0.98 × fair value by construction, so the option's RTP is 98.00 % relative to optimal continuation.
 Validation of the fair values against the engine: at the first decision of 9.3 M rounds (basic strategy, crowd
@@ -260,7 +264,7 @@ Sample offers per €1: 16 v T (2 cards) €0.42, 12 v 6 €0.83, T-T v 9 €1.7
   envelope theorem equal to the fixed-basic-strategy EoR to first order). Default rules (EV change in %, per card
   removed): A -0.64, 2 +0.32, 3 +0.42, 4 +0.59, 5 +0.78, 6 +0.46, 7 +0.29, 8 +0.00, 9 -0.17, T -0.44. Compare Griffin's classic values (A −0.61, 2 +0.38, 3 +0.44, 4 +0.55, 5 +0.69, 6 +0.46,
   7 +0.28, 8 0.00, 9 −0.18, T −0.51): the late-BJ and Charlie rules shift them slightly.
-* `table_analytics()` takes < 10 ms (Bust Bonus recursion ≈ 5 ms, cached per composition).
+* `table_analytics()` takes ≈ 2 ms on a new composition (memoised exact Bust Bonus recursion ≈ 1 ms; results cached per composition).
 
 ## 5. Please verify in the in-game help / at the table
 1. **10-up dealer blackjack vs doubles/splits** — the help is silent. Simulation picks "takes all"
