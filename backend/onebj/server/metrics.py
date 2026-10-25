@@ -33,19 +33,9 @@ class LabMetrics(Metrics):
     curve: list[list[float]] = field(default_factory=lambda: [[0, 0.0]])  # [rounds, cumulative net]
     agree: int = 0
     decisions: int = 0
-    cashouts: int = 0
 
     def add(self, r: RoundResult) -> None:
         super().add(r)
-        for h in r.hands:  # Metrics counts a cash-out as a win: classify it by what it returned instead
-            if h.result == "cashout":
-                self.cashouts += 1
-                if h.payout < h.bet:
-                    self.wins -= 1
-                    self.losses += 1
-                elif h.payout == h.bet:
-                    self.wins -= 1
-                    self.pushes += 1
         if self.rounds % self.stride == 0:
             self.curve.append([self.rounds, self.balance])
             if len(self.curve) > MAX_POINTS:
@@ -106,13 +96,12 @@ def merge_parts(parts: Sequence[LabMetrics], start: float) -> LabMetrics:
         out.merge(p)
         out.curve = [list(x) for x in p.curve]
         out.stride, out.max_drawdown = p.stride, p.max_drawdown
-        out.agree, out.decisions, out.cashouts = p.agree, p.decisions, p.cashouts
+        out.agree, out.decisions = p.agree, p.decisions
         return out
     for p in parts:
         out.merge(p)
         out.agree += p.agree
         out.decisions += p.decisions
-        out.cashouts += p.cashouts
     k = min(len(p.curve) for p in parts)
     curve = [[sum(p.curve[i][0] for p in parts), sum(p.curve[i][1] for p in parts)] for i in range(k)]
     if curve[-1][0] != out.rounds:

@@ -85,6 +85,8 @@ class Metrics:
     pushes: int = 0
     blackjacks: int = 0
     charlies: int = 0
+    cashouts: int = 0  # cashed-out hands (also classified as win/loss/push by payout vs stake)
+    cashout_net: float = 0.0  # sum of (payout - stake) of cashed-out hands
     doubles: int = 0
     splits: int = 0
     dealer_busts: int = 0
@@ -117,6 +119,10 @@ class Metrics:
             self.splits += 1
         for h in r.hands:
             res = h.result
+            if res == "cashout":
+                self.cashouts += 1
+                self.cashout_net += h.payout - h.bet
+                res = "win" if h.payout > h.bet else ("lose" if h.payout < h.bet else "push")
             if res == "lose":
                 self.losses += 1
             elif res == "push":
@@ -150,7 +156,7 @@ class Metrics:
 
     def merge(self, o: "Metrics") -> None:
         for k in ("rounds", "net", "net_sq", "wagered", "main_bet", "main_net", "main_net_sq_unit", "main_wagered",
-                  "wins", "losses", "pushes", "blackjacks", "charlies", "doubles", "splits", "dealer_busts",
+                  "wins", "losses", "pushes", "blackjacks", "charlies", "cashouts", "cashout_net", "doubles", "splits", "dealer_busts",
                   "insurance_wagered", "insurance_net"):
             setattr(self, k, getattr(self, k) + getattr(o, k))
         for name, acc in o.side.items():
@@ -179,7 +185,8 @@ class Metrics:
             "std_per_round": math.sqrt(var), "edge": edge, "main_rtp": 1 + edge,
             "edge_se": math.sqrt(var_u / n), "main_std_per_unit": math.sqrt(var_u),
             "wins": self.wins, "losses": self.losses, "pushes": self.pushes, "blackjacks": self.blackjacks,
-            "charlies": self.charlies, "doubles": self.doubles, "splits": self.splits,
+            "charlies": self.charlies, "cashouts": self.cashouts, "cashout_net": self.cashout_net,
+            "doubles": self.doubles, "splits": self.splits,
             "dealer_bust_rate": self.dealer_busts / n,
             "insurance": {"wagered": self.insurance_wagered, "net": self.insurance_net},
             "side_bets": sides, "bankroll": self.bankroll, "max_drawdown": self.max_drawdown,

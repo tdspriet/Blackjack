@@ -28,3 +28,8 @@ addopts = "-q"
 dev = [
     "httpx2>=2.16.0",
 ]
+notebook = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "nbformat>=5.11.1",
+]

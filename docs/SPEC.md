@@ -291,6 +291,56 @@ weights as [[i,j,w],...]}, "training": {...metadata}}`.
 Baselines: `BasicStrategyAgent` (flat min bet, no sides, never insures), `HiLoAgent` (basic + Illustrious 18 index
 plays, insurance at TC ≥ +3, 1–12 spread by true count, side bets when analytic EV > 0).
 
+### 5.1 NNAgent as implemented (`onebj/ai/`, authoritative details — see docs/NN.md for the ML side)
+
+```python
+from onebj.ai.agent import NNAgent, BetConfig, list_checkpoints, load_training_log
+list_checkpoints(dir="checkpoints") -> list[dict]      # [{name, path (.pt, absolute), created (ISO), metrics}], newest first
+load_training_log(path_or_name, dir="checkpoints") -> list[dict]   # = checkpoints/<name>.json["training_log"]
+NNAgent.load(path_or_name, config: GameConfig | None = None, *, trace=True, bet: BetConfig | dict | None = None,
+             dir="checkpoints") -> NNAgent              # name in dir, or a path to <name>.pt
+agent.name == "nn:<name>";  agent.trace: bool;  agent.set_trace(on)   # trace=False → decide_* return (decision, None)
+agent.decide_bets(obs) / decide_insurance(obs) / decide_action(obs)    # Agent protocol, (decision, Trace | None)
+agent.fast_bets(table) / fast_insurance(table) / fast_action(table, decision_state) -> str   # onebj.sim fast path
+agent.describe() -> dict
+```
+
+* Relative `dir`s resolve against the CWD first, then the repository root. A checkpoint is `<name>.pt` (torch
+  `state_dict` + architecture + feature spec, loaded with `weights_only=True`) plus `<name>.json` (metadata: `name,
+  created, config_hash, feature_names, feature_spec, arch, bet_config, train_config, gen_config, game_config, data,
+  timing, metrics, training_log` and, after `evaluate --save-metrics`, `evaluation`).
+* **Network**: `input` (61 features) → `trunk.0` (128, ReLU) → `trunk.1` (64, ReLU) → heads `play` (5:
+  `["stand","hit","double","split","cashout"]`) and `bet` (6: `["main","perfect_pairs","twenty_one_plus_three",
+  "crazy_7","bust_bonus","insurance"]`), both `from: "trunk.1"`. The `cashout` output is wired to the input
+  `cashout_value` (= offer / bet − 1, exact) and has no edges.
+* **describe()**: `layers` = input (with `labels` = feature names), `trunk.0`, `trunk.1`; `heads` as above (with
+  `labels`, `from`); `edges` = `{"input->trunk.0", "trunk.0->trunk.1", "trunk.1->play", "trunk.1->bet"}`, each the
+  top ≤ 400 weights by |w| as `[i, j, w]` (bet-head weights are multiplied by the head's output scale, i.e. in EV
+  units); `training` = `{created, config_hash, metrics, data, timing, train_config, gen_config, description,
+  cashout_output, bet_config}`.
+* **Traces** (all JSON-able, floats rounded): `features` = all 61 `{name, value (fed to the net), raw (human value or
+  null)}`; `layers` = `input`, `trunk.0`, `trunk.1` activations (post-ReLU) and the active head (`play`, or `bet` for
+  bet and insurance decisions).
+  * `play`: `outputs` = Q per label in EV per unit of the hand's original bet, `null` for illegal actions, `legal` =
+    mask; `chosen` = argmax over legal; `reference = {basic_strategy, hilo_deviation}` (the Illustrious-18 entry that
+    applies at the current TC, else null); `extra = {cashout_offer (money), q_margin, true_count}`.
+  * `insurance`: `outputs = {labels: ["insure","no_insurance"], values: [predicted EV per unit insurance stake, 0]}`;
+    `reference.basic_strategy = "no_insurance"`, `hilo_deviation = "insurance"` at TC ≥ +3; `extra = {predicted_ev:
+    {insurance}, analytic_ev: {insurance}, true_count}`.
+  * `bet`: `outputs` = the 6 bet-head EVs per unit stake (`legal` all true); `chosen` = main stake as text;
+    `reference.hilo_bet_units` = what the Hi-Lo ramp would bet (string); `extra = {predicted_ev{6}, bet_fraction (total
+    stake / bankroll), bets (Bets dict), kelly {edge, kelly_stake, bankroll, units, side_kelly_stakes}, analytic_ev
+    (exact side-bet / insurance EVs and the EoR main-edge estimate for the composition), true_count}`.
+* **Bet sizing** (`BetConfig`, stored in the checkpoint, overridable with `bet=`): main = `kelly_fraction (0.5) ×
+  predicted edge / main_variance (1.33) × bankroll`, rounded to whole euros, clamped to `[unit, unit × max_units]`
+  (defaults €1 and 12); `bankroll_mode "fixed"` uses `bankroll` (default `config.bankroll.start`), `"live"` the
+  current balance. Side bet placed when predicted EV > `side_threshold` (0.02), stake = side-bet Kelly stake clamped
+  to `[side_min, side_min × side_max_units]` (= the €1 minimum in practice). Insure when the predicted insurance EV >
+  `insurance_threshold` (0).
+* Other evaluator agents (`onebj.ai.evaluate.build_agent`): `"<ckpt>:flat"` (NN play only, flat minimum, no side
+  bets/insurance), `"<ckpt>:nosides"`, `"solver"` (`onebj.ai.oracle.SolverAgent`: composition-dependent DP + cash-out,
+  flat, slow reference), `"solver_nocash"`.
+
 ---
 
 ## 6. Server protocol (FastAPI)
@@ -416,10 +466,18 @@ card counter can see, and be inspectable.
   rank bucket minus expected (10), decks unseen, Hi-Lo true count, half indicator, cards-to-cut.
 * **Play network**: MLP trunk → Q-head over [stand, hit, double, split, cashout] (EV per unit of original bet), masked by legality.
   (Cashout value is known exactly = offer/bet − 1, so the net only has to learn when holding beats it.)
-  Trained by deep Q-learning / all-action Monte-Carlo rollouts on cloned tables with `resample_unseen=True`.
+  *As implemented:* the targets are the action EVs of a cash-aware dynamic-programming solver at the current unseen
+  composition (`onebj/ai/oracle.py`), iterated over generations with the network's own behaviour policy; all-action
+  Monte-Carlo rollouts on `clone(resample_unseen=True)` are implemented as an alternative/blend (`targets: "mc" |
+  "blend"`) and were measured to be worse at equal budget — see docs/NN.md §2.1.
 * **Bet network**: composition features → predicted EV per unit for main bet (under the current play policy) and each side
   bet + insurance; bet sizing = fractional Kelly on the predicted edge, clamped to limits; side bet placed when predicted
-  EV > threshold.
+  EV > threshold. *As implemented:* one network with a shared trunk and two heads (`play`, `bet`); bet targets are
+  realised engine returns (main, Bust Bonus) and a deal Monte Carlo settled with the engine's `settle_*` (PP, 21+3,
+  Crazy 7, insurance).
+* Extra modules: `ai/datagen.py` (multiprocess data generation), `ai/policy.py` (fast table policies), `ai/oracle.py`
+  (`CashSolver`, `SolverAgent`), `ai/analysis.py` (solver regret, strategy charts, index scans, bet head vs exact),
+  `ai/sidebet_study.py` (exact side-bet +EV frequencies), `notebooks/nn_playground.ipynb`.
 * Checkpoints in `checkpoints/<name>.pt` + `<name>.json` (config hash, feature names, metrics, training log).
 * Evaluation report vs baselines (basic flat, Hi-Lo spread): EV per round, edge, std, agreement with basic strategy,
   side-bet results.

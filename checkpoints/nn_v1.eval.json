@@ -1,0 +1,3854 @@
+{
+ "rounds": 2000000,
+ "seed": 2026,
+ "agents": [
+  {
+   "rounds": 2000000,
+   "net": -6483.5,
+   "wagered": 2222026.0,
+   "ev_per_round": -0.00324175,
+   "std_per_round": 1.126361339027995,
+   "edge": -0.00324175,
+   "main_rtp": 0.99675825,
+   "edge_se": 0.0007964577408930551,
+   "main_std_per_unit": 1.126361339027995,
+   "wins": 893301,
+   "losses": 978409,
+   "pushes": 175372,
+   "blackjacks": 90315,
+   "charlies": 5190,
+   "cashouts": 0,
+   "cashout_net": 0.0,
+   "doubles": 174944,
+   "splits": 47082,
+   "dealer_bust_rate": 0.268612,
+   "insurance": {
+    "wagered": 0.0,
+    "net": 0.0
+   },
+   "side_bets": {
+    "perfect_pairs": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "twenty_one_plus_three": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "crazy_7": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "bust_bonus": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    }
+   },
+   "max_drawdown": 1523.5,
+   "rounds_per_sec": 488472.6211944052,
+   "agent": "basic",
+   "unit": 1.0,
+   "ev_per_round_units": -0.00324175,
+   "ev_se_units": 0.0007964577408930551,
+   "main_ev_per_round_units": -0.00324175,
+   "avg_bet_units": 1.0,
+   "max_bet": 1,
+   "edge_on_wagered_main": -0.0029178326446225203,
+   "agreement_basic": 1.0,
+   "decisions": 2712725,
+   "actions": {
+    "stand": 1273093,
+    "hit": 1217606,
+    "double": 174944,
+    "split": 47082
+   },
+   "cashouts_per_1000_rounds": 0.0,
+   "cashout_mean_offer": null,
+   "cashout_diagnostic": {
+    "cashouts": 0,
+    "mean_cashout_ev": null,
+    "mean_hold_ev_solver": null,
+    "mean_hold_return_mc": null,
+    "gain_per_cashout_vs_solver_hold": null,
+    "cashout_rate_by_tc": {
+     "-4": 0.0,
+     "-3": 0.0,
+     "-2": 0.0,
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "3": 0.0,
+     "4": 0.0
+    },
+    "cashout_rate_overall": 0.0,
+    "mean_tc_at_cashout": null,
+    "by_class": {
+     "3+ cards": {
+      "decisions_per_1000_rounds": 390.4085,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 2-6": {
+      "decisions_per_1000_rounds": 153.16,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 7-A": {
+      "decisions_per_1000_rounds": 220.67,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 17-21": {
+      "decisions_per_1000_rounds": 157.8235,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard <=11": {
+      "decisions_per_1000_rounds": 197.027,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "pair": {
+      "decisions_per_1000_rounds": 141.739,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "soft 2-card": {
+      "decisions_per_1000_rounds": 95.5345,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     }
+    }
+   },
+   "insurance_offered": 153667,
+   "insurance_taken": 0,
+   "top_disagreements": [],
+   "bet_spread": {
+    "1": 1.0
+   },
+   "wall_seconds": 5.0059372920004535
+  },
+  {
+   "rounds": 2000000,
+   "net": -4188.5,
+   "wagered": 2229756.0,
+   "ev_per_round": -0.00209425,
+   "std_per_round": 1.1306872861746247,
+   "edge": -0.00209425,
+   "main_rtp": 0.99790575,
+   "edge_se": 0.0007995166474554916,
+   "main_std_per_unit": 1.1306872861746247,
+   "wins": 895086,
+   "losses": 978785,
+   "pushes": 174637,
+   "blackjacks": 90369,
+   "charlies": 5157,
+   "cashouts": 0,
+   "cashout_net": 0.0,
+   "doubles": 181248,
+   "splits": 48508,
+   "dealer_bust_rate": 0.2685655,
+   "insurance": {
+    "wagered": 0.0,
+    "net": 0.0
+   },
+   "side_bets": {
+    "perfect_pairs": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "twenty_one_plus_three": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "crazy_7": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "bust_bonus": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    }
+   },
+   "max_drawdown": 1425.5,
+   "rounds_per_sec": 137978.7267440206,
+   "agent": "nn_v1:flat_nocash",
+   "unit": 1.0,
+   "ev_per_round_units": -0.00209425,
+   "ev_se_units": 0.0007995166474554916,
+   "main_ev_per_round_units": -0.00209425,
+   "avg_bet_units": 1.0,
+   "max_bet": 1.0,
+   "edge_on_wagered_main": -0.0018784566562440016,
+   "agreement_basic": 0.9595746466554664,
+   "decisions": 2716612,
+   "actions": {
+    "stand": 1289486,
+    "hit": 1197370,
+    "double": 181248,
+    "split": 48508
+   },
+   "cashouts_per_1000_rounds": 0.0,
+   "cashout_mean_offer": null,
+   "cashout_diagnostic": {
+    "cashouts": 0,
+    "mean_cashout_ev": null,
+    "mean_hold_ev_solver": null,
+    "mean_hold_return_mc": null,
+    "gain_per_cashout_vs_solver_hold": null,
+    "cashout_rate_by_tc": {
+     "-4": 0.0,
+     "-3": 0.0,
+     "-2": 0.0,
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "3": 0.0,
+     "4": 0.0
+    },
+    "cashout_rate_overall": 0.0,
+    "mean_tc_at_cashout": null,
+    "by_class": {
+     "3+ cards": {
+      "decisions_per_1000_rounds": 390.4385,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 2-6": {
+      "decisions_per_1000_rounds": 153.1875,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 7-A": {
+      "decisions_per_1000_rounds": 221.2465,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 17-21": {
+      "decisions_per_1000_rounds": 158.6945,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard <=11": {
+      "decisions_per_1000_rounds": 197.3825,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "pair": {
+      "decisions_per_1000_rounds": 141.756,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "soft 2-card": {
+      "decisions_per_1000_rounds": 95.6005,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     }
+    }
+   },
+   "insurance_offered": 153609,
+   "insurance_taken": 0,
+   "top_disagreements": [
+    {
+     "cell": "H16vT/3c: stand (basic hit)",
+     "per_1000_rounds": 7.486,
+     "mean_tc": 0.5968060893997558
+    },
+    {
+     "cell": "H16vT: stand (basic hit)",
+     "per_1000_rounds": 6.9425,
+     "mean_tc": 0.7663409403873084
+    },
+    {
+     "cell": "H12v4: hit (basic stand)",
+     "per_1000_rounds": 3.152,
+     "mean_tc": -1.2337860508359808
+    },
+    {
+     "cell": "H13v2: hit (basic stand)",
+     "per_1000_rounds": 2.278,
+     "mean_tc": -1.25971857364769
+    },
+    {
+     "cell": "H12v6: hit (basic stand)",
+     "per_1000_rounds": 2.232,
+     "mean_tc": -1.406923180009203
+    },
+    {
+     "cell": "H11vT: double (basic hit)",
+     "per_1000_rounds": 2.0475,
+     "mean_tc": 1.0120766211497485
+    },
+    {
+     "cell": "H12v3: stand (basic hit)",
+     "per_1000_rounds": 1.863,
+     "mean_tc": 1.8991253838178745
+    },
+    {
+     "cell": "H12v5: hit (basic stand)",
+     "per_1000_rounds": 1.5995,
+     "mean_tc": -2.0304715447271255
+    },
+    {
+     "cell": "H13v3: hit (basic stand)",
+     "per_1000_rounds": 1.2975,
+     "mean_tc": -1.9277136830092387
+    },
+    {
+     "cell": "H16vT/4c: stand (basic hit)",
+     "per_1000_rounds": 1.2475,
+     "mean_tc": 0.9973220792691089
+    },
+    {
+     "cell": "H9v2: double (basic hit)",
+     "per_1000_rounds": 1.004,
+     "mean_tc": 2.0015173597687346
+    },
+    {
+     "cell": "H12v2: stand (basic hit)",
+     "per_1000_rounds": 1.004,
+     "mean_tc": 2.42064454834223
+    },
+    {
+     "cell": "H15vT: stand (basic hit)",
+     "per_1000_rounds": 0.92,
+     "mean_tc": 3.331716453128649
+    },
+    {
+     "cell": "P88vT: stand (basic hit)",
+     "per_1000_rounds": 0.7515,
+     "mean_tc": 0.7370867593407572
+    },
+    {
+     "cell": "H9v3: hit (basic double)",
+     "per_1000_rounds": 0.727,
+     "mean_tc": -1.9133834020162532
+    },
+    {
+     "cell": "H13v4: hit (basic stand)",
+     "per_1000_rounds": 0.6755,
+     "mean_tc": -2.8409444191888507
+    },
+    {
+     "cell": "H13v2/3c: hit (basic stand)",
+     "per_1000_rounds": 0.5535,
+     "mean_tc": -1.4152137748567197
+    },
+    {
+     "cell": "S18v2: double (basic stand)",
+     "per_1000_rounds": 0.516,
+     "mean_tc": 0.49600767273662055
+    },
+    {
+     "cell": "H10v9: hit (basic double)",
+     "per_1000_rounds": 0.493,
+     "mean_tc": -2.699253355624229
+    },
+    {
+     "cell": "H11vA: double (basic hit)",
+     "per_1000_rounds": 0.475,
+     "mean_tc": 2.2935939053477576
+    },
+    {
+     "cell": "H8v6: double (basic hit)",
+     "per_1000_rounds": 0.4715,
+     "mean_tc": 2.7406716921856926
+    },
+    {
+     "cell": "H14v2: hit (basic stand)",
+     "per_1000_rounds": 0.457,
+     "mean_tc": -2.975238111101668
+    },
+    {
+     "cell": "H16v9: stand (basic hit)",
+     "per_1000_rounds": 0.423,
+     "mean_tc": 1.9230563936057086
+    },
+    {
+     "cell": "H13v6: hit (basic stand)",
+     "per_1000_rounds": 0.4225,
+     "mean_tc": -3.1066647436227166
+    },
+    {
+     "cell": "S17v2: double (basic hit)",
+     "per_1000_rounds": 0.398,
+     "mean_tc": 0.7769364292040326
+    }
+   ],
+   "bet_spread": {
+    "1": 1.0
+   },
+   "wall_seconds": 15.495780625000407
+  },
+  {
+   "rounds": 2000000,
+   "net": 3975.610000000018,
+   "wagered": 2184066.0,
+   "ev_per_round": 0.001987805000000009,
+   "std_per_round": 1.023251407368293,
+   "edge": 0.001987805000000009,
+   "main_rtp": 1.001987805,
+   "edge_se": 0.0007235480090087984,
+   "main_std_per_unit": 1.023251407368293,
+   "wins": 838223,
+   "losses": 1060234,
+   "pushes": 142360,
+   "blackjacks": 90370,
+   "charlies": 2427,
+   "cashouts": 421153,
+   "cashout_net": -81553.39000000719,
+   "doubles": 143249,
+   "splits": 40817,
+   "dealer_bust_rate": 0.2685495,
+   "insurance": {
+    "wagered": 0.0,
+    "net": 0.0
+   },
+   "side_bets": {
+    "perfect_pairs": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "twenty_one_plus_three": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "crazy_7": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "bust_bonus": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    }
+   },
+   "max_drawdown": 828.7600000000056,
+   "rounds_per_sec": 61938.39010015287,
+   "agent": "nn_v1:flat",
+   "unit": 1.0,
+   "ev_per_round_units": 0.001987805000000009,
+   "ev_se_units": 0.0007235480090087983,
+   "main_ev_per_round_units": 0.001987805000000009,
+   "avg_bet_units": 1.0,
+   "max_bet": 1.0,
+   "edge_on_wagered_main": 0.0018202792406456663,
+   "agreement_basic": 0.8095035958411957,
+   "decisions": 2560736,
+   "actions": {
+    "stand": 1022611,
+    "hit": 932906,
+    "double": 143249,
+    "split": 40817,
+    "cashout": 421153
+   },
+   "cashouts_per_1000_rounds": 210.5765,
+   "cashout_mean_offer": 0.8063568584338954,
+   "cashout_diagnostic": {
+    "cashouts": 421153,
+    "mean_cashout_ev": -0.19364314156614623,
+    "mean_hold_ev_solver": -0.2139036799110437,
+    "mean_hold_return_mc": -0.21875971440308273,
+    "gain_per_cashout_vs_solver_hold": 0.020260538344897456,
+    "cashout_rate_by_tc": {
+     "-4": 0.24530672746288645,
+     "-3": 0.2160629194215898,
+     "-2": 0.1819399946745918,
+     "-1": 0.1312965413172081,
+     "0": 0.09459748984962903,
+     "1": 0.16397177614227917,
+     "2": 0.2412303878709851,
+     "3": 0.28615387510821694,
+     "4": 0.3281693429608076
+    },
+    "cashout_rate_overall": 0.16446560676305563,
+    "mean_tc_at_cashout": 0.1382594117519585,
+    "by_class": {
+     "3+ cards": {
+      "decisions_per_1000_rounds": 318.0225,
+      "cashout_rate": 0.15310709147937646,
+      "mean_tc_at_cashout": 0.40194636625383445,
+      "gain_per_cashout_vs_solver_hold": 0.015351853547660103
+     },
+     "hard 12-16 v 2-6": {
+      "decisions_per_1000_rounds": 151.2895,
+      "cashout_rate": 0.1989596105479891,
+      "mean_tc_at_cashout": -1.5396752454707892,
+      "gain_per_cashout_vs_solver_hold": 0.02110501387709357
+     },
+     "hard 12-16 v 7-A": {
+      "decisions_per_1000_rounds": 220.942,
+      "cashout_rate": 0.2599551013388129,
+      "mean_tc_at_cashout": 1.4670805522678974,
+      "gain_per_cashout_vs_solver_hold": 0.019449915588763814
+     },
+     "hard 17-21": {
+      "decisions_per_1000_rounds": 157.261,
+      "cashout_rate": 0.15509248955557958,
+      "mean_tc_at_cashout": -0.24608836833709458,
+      "gain_per_cashout_vs_solver_hold": 0.017163198335894286
+     },
+     "hard <=11": {
+      "decisions_per_1000_rounds": 195.966,
+      "cashout_rate": 0.1309997652654032,
+      "mean_tc_at_cashout": -1.3219991814803673,
+      "gain_per_cashout_vs_solver_hold": 0.035071665103512055
+     },
+     "pair": {
+      "decisions_per_1000_rounds": 141.75,
+      "cashout_rate": 0.0851604938271605,
+      "mean_tc_at_cashout": 0.11160203204017646,
+      "gain_per_cashout_vs_solver_hold": 0.01986561000679385
+     },
+     "soft 2-card": {
+      "decisions_per_1000_rounds": 95.137,
+      "cashout_rate": 0.12840955674448426,
+      "mean_tc_at_cashout": 0.836461187284943,
+      "gain_per_cashout_vs_solver_hold": 0.017005749143351154
+     }
+    }
+   },
+   "insurance_offered": 153419,
+   "insurance_taken": 0,
+   "top_disagreements": [
+    {
+     "cell": "H15vT: cashout (basic hit)",
+     "per_1000_rounds": 6.941,
+     "mean_tc": 1.6671991245106665
+    },
+    {
+     "cell": "H13vT: cashout (basic hit)",
+     "per_1000_rounds": 6.3315,
+     "mean_tc": 1.394618313701038
+    },
+    {
+     "cell": "H12vT: cashout (basic hit)",
+     "per_1000_rounds": 5.493,
+     "mean_tc": 1.484687833150233
+    },
+    {
+     "cell": "H14vT: cashout (basic hit)",
+     "per_1000_rounds": 5.1885,
+     "mean_tc": 1.592787868315553
+    },
+    {
+     "cell": "H16vT: stand (basic hit)",
+     "per_1000_rounds": 4.3045,
+     "mean_tc": -0.016234784965920644
+    },
+    {
+     "cell": "H16vT/3c: stand (basic hit)",
+     "per_1000_rounds": 4.06,
+     "mean_tc": -0.3396819909294547
+    },
+    {
+     "cell": "H16vT: cashout (basic hit)",
+     "per_1000_rounds": 3.61,
+     "mean_tc": 1.9068962116191392
+    },
+    {
+     "cell": "H12v4: hit (basic stand)",
+     "per_1000_rounds": 2.8495,
+     "mean_tc": -1.2169557342193147
+    },
+    {
+     "cell": "PTTvT: cashout (basic stand)",
+     "per_1000_rounds": 2.8485,
+     "mean_tc": 2.1447658591796888
+    },
+    {
+     "cell": "H15vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.8335,
+     "mean_tc": 1.4325827239897453
+    },
+    {
+     "cell": "H14vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.7305,
+     "mean_tc": 0.9571003003920284
+    },
+    {
+     "cell": "H13v7: cashout (basic hit)",
+     "per_1000_rounds": 2.374,
+     "mean_tc": 1.1804429639454423
+    },
+    {
+     "cell": "H16vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.3205,
+     "mean_tc": 1.3886794262226383
+    },
+    {
+     "cell": "H18vT: cashout (basic stand)",
+     "per_1000_rounds": 2.255,
+     "mean_tc": 2.1891232510550065
+    },
+    {
+     "cell": "H19vT: cashout (basic stand)",
+     "per_1000_rounds": 2.2035,
+     "mean_tc": 2.3623223241157123
+    },
+    {
+     "cell": "H13v2: hit (basic stand)",
+     "per_1000_rounds": 2.144,
+     "mean_tc": -1.252263855291223
+    },
+    {
+     "cell": "H14v7: cashout (basic hit)",
+     "per_1000_rounds": 2.141,
+     "mean_tc": 1.2076107888977954
+    },
+    {
+     "cell": "H13vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.141,
+     "mean_tc": 0.8854368414150372
+    },
+    {
+     "cell": "H11vT: double (basic hit)",
+     "per_1000_rounds": 2.057,
+     "mean_tc": 0.9940426890021937
+    },
+    {
+     "cell": "H17vT: cashout (basic stand)",
+     "per_1000_rounds": 2.0285,
+     "mean_tc": 2.542526906857073
+    },
+    {
+     "cell": "H15v9: cashout (basic hit)",
+     "per_1000_rounds": 1.9395,
+     "mean_tc": 1.607800890845976
+    },
+    {
+     "cell": "H12v9: cashout (basic hit)",
+     "per_1000_rounds": 1.928,
+     "mean_tc": 1.1489311115837881
+    },
+    {
+     "cell": "H13v6: cashout (basic stand)",
+     "per_1000_rounds": 1.902,
+     "mean_tc": -1.232186009163491
+    },
+    {
+     "cell": "H13v5: cashout (basic stand)",
+     "per_1000_rounds": 1.8405,
+     "mean_tc": -1.6712962276645447
+    },
+    {
+     "cell": "H14v8: cashout (basic hit)",
+     "per_1000_rounds": 1.812,
+     "mean_tc": 1.3926994649478868
+    }
+   ],
+   "bet_spread": {
+    "1": 1.0
+   },
+   "wall_seconds": 33.31338241699996
+  },
+  {
+   "rounds": 2000000,
+   "net": 64676.19999999514,
+   "wagered": 4511980.5,
+   "ev_per_round": 0.032338099999997566,
+   "std_per_round": 3.1375584190719232,
+   "edge": 0.015397029703458914,
+   "main_rtp": 1.015397029703459,
+   "edge_se": 0.0007233961508307067,
+   "main_std_per_unit": 1.0230366474732784,
+   "wins": 837534,
+   "losses": 1060767,
+   "pushes": 142512,
+   "blackjacks": 90366,
+   "charlies": 2422,
+   "cashouts": 421286,
+   "cashout_net": -295506.79999998526,
+   "doubles": 143273,
+   "splits": 40813,
+   "dealer_bust_rate": 0.268551,
+   "insurance": {
+    "wagered": 48611.5,
+    "net": 2424.5
+   },
+   "side_bets": {
+    "perfect_pairs": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "twenty_one_plus_three": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "crazy_7": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "bust_bonus": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    }
+   },
+   "max_drawdown": 862.6800000000658,
+   "rounds_per_sec": 59226.79566269894,
+   "agent": "nn_v1:nosides",
+   "unit": 1.0,
+   "ev_per_round_units": 0.032338099999997566,
+   "ev_se_units": 0.0022185888344947004,
+   "main_ev_per_round_units": 0.03112584999999766,
+   "avg_bet_units": 2.021549,
+   "max_bet": 12.0,
+   "edge_on_wagered_main": 0.01394724478303168,
+   "agreement_basic": 0.8090945263296823,
+   "decisions": 2560969,
+   "actions": {
+    "stand": 1022217,
+    "hit": 933380,
+    "double": 143273,
+    "split": 40813,
+    "cashout": 421286
+   },
+   "cashouts_per_1000_rounds": 210.643,
+   "cashout_mean_offer": 0.8050225518872782,
+   "cashout_diagnostic": {
+    "cashouts": 421286,
+    "mean_cashout_ev": -0.1949774481127604,
+    "mean_hold_ev_solver": -0.21518995547687242,
+    "mean_hold_return_mc": -0.221493697491184,
+    "gain_per_cashout_vs_solver_hold": 0.02021250736411199,
+    "cashout_rate_by_tc": {
+     "-4": 0.2452334732818684,
+     "-3": 0.21621666185745497,
+     "-2": 0.18209498778188626,
+     "-1": 0.13138510528479821,
+     "0": 0.09468342980469013,
+     "1": 0.16410516021400218,
+     "2": 0.2415465898174832,
+     "3": 0.2857680333342739,
+     "4": 0.32678670807676424
+    },
+    "cashout_rate_overall": 0.16450257695427004,
+    "mean_tc_at_cashout": 0.1367831637115038,
+    "by_class": {
+     "3+ cards": {
+      "decisions_per_1000_rounds": 318.129,
+      "cashout_rate": 0.15330259108726335,
+      "mean_tc_at_cashout": 0.4034756343979404,
+      "gain_per_cashout_vs_solver_hold": 0.015233810639549731
+     },
+     "hard 12-16 v 2-6": {
+      "decisions_per_1000_rounds": 151.2945,
+      "cashout_rate": 0.1996338267418842,
+      "mean_tc_at_cashout": -1.5296731301646969,
+      "gain_per_cashout_vs_solver_hold": 0.021094690781522343
+     },
+     "hard 12-16 v 7-A": {
+      "decisions_per_1000_rounds": 220.951,
+      "cashout_rate": 0.2583219808916909,
+      "mean_tc_at_cashout": 1.465007548425714,
+      "gain_per_cashout_vs_solver_hold": 0.019406884828308234
+     },
+     "hard 17-21": {
+      "decisions_per_1000_rounds": 157.2695,
+      "cashout_rate": 0.1593474895005071,
+      "mean_tc_at_cashout": -0.19903344774297937,
+      "gain_per_cashout_vs_solver_hold": 0.01725293389231442
+     },
+     "hard <=11": {
+      "decisions_per_1000_rounds": 195.966,
+      "cashout_rate": 0.13129063204841657,
+      "mean_tc_at_cashout": -1.3193707557382461,
+      "gain_per_cashout_vs_solver_hold": 0.03514398290096717
+     },
+     "pair": {
+      "decisions_per_1000_rounds": 141.7425,
+      "cashout_rate": 0.08255110499673704,
+      "mean_tc_at_cashout": 0.05666278769258687,
+      "gain_per_cashout_vs_solver_hold": 0.0198777113019811
+     },
+     "soft 2-card": {
+      "decisions_per_1000_rounds": 95.132,
+      "cashout_rate": 0.1272232266745154,
+      "mean_tc_at_cashout": 0.8253478675276658,
+      "gain_per_cashout_vs_solver_hold": 0.016582787331016695
+     }
+    }
+   },
+   "insurance_offered": 153426,
+   "insurance_taken": 15747,
+   "top_disagreements": [
+    {
+     "cell": "H15vT: cashout (basic hit)",
+     "per_1000_rounds": 6.8545,
+     "mean_tc": 1.672151959824355
+    },
+    {
+     "cell": "H13vT: cashout (basic hit)",
+     "per_1000_rounds": 6.328,
+     "mean_tc": 1.3931967335339088
+    },
+    {
+     "cell": "H12vT: cashout (basic hit)",
+     "per_1000_rounds": 5.5145,
+     "mean_tc": 1.4903677011145169
+    },
+    {
+     "cell": "H14vT: cashout (basic hit)",
+     "per_1000_rounds": 5.4005,
+     "mean_tc": 1.5922361789314514
+    },
+    {
+     "cell": "H16vT: stand (basic hit)",
+     "per_1000_rounds": 4.6165,
+     "mean_tc": 0.11067827470327218
+    },
+    {
+     "cell": "H16vT/3c: stand (basic hit)",
+     "per_1000_rounds": 4.1895,
+     "mean_tc": -0.27964428646552064
+    },
+    {
+     "cell": "H16vT: cashout (basic hit)",
+     "per_1000_rounds": 3.224,
+     "mean_tc": 1.9073340208778975
+    },
+    {
+     "cell": "H12v4: hit (basic stand)",
+     "per_1000_rounds": 2.847,
+     "mean_tc": -1.2175336112274904
+    },
+    {
+     "cell": "H15vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.799,
+     "mean_tc": 1.4279528661501746
+    },
+    {
+     "cell": "H17vT: cashout (basic stand)",
+     "per_1000_rounds": 2.65,
+     "mean_tc": 2.3604672882393873
+    },
+    {
+     "cell": "H14vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.65,
+     "mean_tc": 0.9345935894736536
+    },
+    {
+     "cell": "H18vT: cashout (basic stand)",
+     "per_1000_rounds": 2.53,
+     "mean_tc": 2.0847831210558283
+    },
+    {
+     "cell": "PTTvT: cashout (basic stand)",
+     "per_1000_rounds": 2.507,
+     "mean_tc": 2.200073689237631
+    },
+    {
+     "cell": "H13v7: cashout (basic hit)",
+     "per_1000_rounds": 2.3245,
+     "mean_tc": 1.1633301998275476
+    },
+    {
+     "cell": "H19vT: cashout (basic stand)",
+     "per_1000_rounds": 2.291,
+     "mean_tc": 2.327655017698056
+    },
+    {
+     "cell": "H16vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.157,
+     "mean_tc": 1.3682134807978172
+    },
+    {
+     "cell": "H13v2: hit (basic stand)",
+     "per_1000_rounds": 2.1375,
+     "mean_tc": -1.2579827989893124
+    },
+    {
+     "cell": "H13vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.121,
+     "mean_tc": 0.8765743716109008
+    },
+    {
+     "cell": "H14v7: cashout (basic hit)",
+     "per_1000_rounds": 2.0905,
+     "mean_tc": 1.1889484875134486
+    },
+    {
+     "cell": "H11vT: double (basic hit)",
+     "per_1000_rounds": 2.0895,
+     "mean_tc": 1.0171336432269187
+    },
+    {
+     "cell": "H15v9: cashout (basic hit)",
+     "per_1000_rounds": 1.9175,
+     "mean_tc": 1.6027296151668604
+    },
+    {
+     "cell": "H13v6: cashout (basic stand)",
+     "per_1000_rounds": 1.902,
+     "mean_tc": -1.2338629197148376
+    },
+    {
+     "cell": "H12v9: cashout (basic hit)",
+     "per_1000_rounds": 1.861,
+     "mean_tc": 1.118212367942909
+    },
+    {
+     "cell": "H13v5: cashout (basic stand)",
+     "per_1000_rounds": 1.823,
+     "mean_tc": -1.6996489608329297
+    },
+    {
+     "cell": "H14v8: cashout (basic hit)",
+     "per_1000_rounds": 1.753,
+     "mean_tc": 1.3751413519139826
+    }
+   ],
+   "bet_spread": {
+    "1": 0.759417,
+    "2": 0.055956,
+    "3": 0.041279,
+    "4": 0.0311635,
+    "5": 0.0239385,
+    "6": 0.0185725,
+    "7": 0.014541,
+    "8": 0.011433,
+    "9": 0.009008,
+    "10": 0.007211,
+    "11": 0.0055975,
+    "12": 0.021883
+   },
+   "wall_seconds": 34.83419658300045
+  },
+  {
+   "rounds": 2000000,
+   "net": 233428.72000000678,
+   "wagered": 5508729.5,
+   "ev_per_round": 0.11671436000000339,
+   "std_per_round": 11.333684369134923,
+   "edge": 0.015396663647528536,
+   "main_rtp": 1.0153966636475285,
+   "edge_se": 0.0007233960217424406,
+   "main_std_per_unit": 1.0230364649149017,
+   "wins": 837533,
+   "losses": 1060768,
+   "pushes": 142512,
+   "blackjacks": 90366,
+   "charlies": 2422,
+   "cashouts": 421287,
+   "cashout_net": -295507.27999998524,
+   "doubles": 143273,
+   "splits": 40813,
+   "dealer_bust_rate": 0.268551,
+   "insurance": {
+    "wagered": 48611.5,
+    "net": 2424.5
+   },
+   "side_bets": {
+    "perfect_pairs": {
+     "wagered": 9607.0,
+     "net": 129.0,
+     "rtp": 1.013427708962215,
+     "bets": 8334,
+     "wins": 660,
+     "rtp_se": 0.04519713601340822
+    },
+    "twenty_one_plus_three": {
+     "wagered": 13145.0,
+     "net": 140.0,
+     "rtp": 1.0106504374286802,
+     "bets": 11133,
+     "wins": 1125,
+     "rtp_se": 0.03923599255609375
+    },
+    "crazy_7": {
+     "wagered": 654287.0,
+     "net": 140471.0,
+     "rtp": 1.214693246235979,
+     "bets": 627286,
+     "wins": 55938,
+     "rtp_se": 0.02065611344928517
+    },
+    "bust_bonus": {
+     "wagered": 319710.0,
+     "net": 28014.0,
+     "rtp": 1.0876231584873792,
+     "bets": 136774,
+     "wins": 35891,
+     "rtp_se": 0.01049549632957876
+    }
+   },
+   "max_drawdown": 2586.0800000000017,
+   "rounds_per_sec": 55836.71857249799,
+   "agent": "nn_v1",
+   "unit": 1.0,
+   "ev_per_round_units": 0.11671436000000339,
+   "ev_se_units": 0.008014125073243282,
+   "main_ev_per_round_units": 0.031125109999997666,
+   "avg_bet_units": 2.021549,
+   "max_bet": 12.0,
+   "edge_on_wagered_main": 0.013946913194942056,
+   "agreement_basic": 0.8090940613080679,
+   "decisions": 2560968,
+   "actions": {
+    "stand": 1022216,
+    "hit": 933379,
+    "double": 143273,
+    "split": 40813,
+    "cashout": 421287
+   },
+   "cashouts_per_1000_rounds": 210.6435,
+   "cashout_mean_offer": 0.8050218753353032,
+   "cashout_diagnostic": {
+    "cashouts": 421287,
+    "mean_cashout_ev": -0.1949781246647354,
+    "mean_hold_ev_solver": -0.2151905927971486,
+    "mean_hold_return_mc": -0.22149210591258253,
+    "gain_per_cashout_vs_solver_hold": 0.02021246813241321,
+    "cashout_rate_by_tc": {
+     "-4": 0.2452334732818684,
+     "-3": 0.21621666185745497,
+     "-2": 0.18209498778188626,
+     "-1": 0.13138510528479821,
+     "0": 0.09468487745013766,
+     "1": 0.16410516021400218,
+     "2": 0.2415465898174832,
+     "3": 0.2857680333342739,
+     "4": 0.32678670807676424
+    },
+    "cashout_rate_overall": 0.16450303166615124,
+    "mean_tc_at_cashout": 0.13678227022440334,
+    "by_class": {
+     "3+ cards": {
+      "decisions_per_1000_rounds": 318.1285,
+      "cashout_rate": 0.15330283203171047,
+      "mean_tc_at_cashout": 0.4034756343979404,
+      "gain_per_cashout_vs_solver_hold": 0.015233810639549731
+     },
+     "hard 12-16 v 2-6": {
+      "decisions_per_1000_rounds": 151.2945,
+      "cashout_rate": 0.1996338267418842,
+      "mean_tc_at_cashout": -1.5296731301646969,
+      "gain_per_cashout_vs_solver_hold": 0.021094690781522343
+     },
+     "hard 12-16 v 7-A": {
+      "decisions_per_1000_rounds": 220.9515,
+      "cashout_rate": 0.2583236592645897,
+      "mean_tc_at_cashout": 1.4649926156254196,
+      "gain_per_cashout_vs_solver_hold": 0.01940674710048302
+     },
+     "hard 17-21": {
+      "decisions_per_1000_rounds": 157.2695,
+      "cashout_rate": 0.1593474895005071,
+      "mean_tc_at_cashout": -0.19903344774297937,
+      "gain_per_cashout_vs_solver_hold": 0.01725293389231442
+     },
+     "hard <=11": {
+      "decisions_per_1000_rounds": 195.966,
+      "cashout_rate": 0.13129063204841657,
+      "mean_tc_at_cashout": -1.3193707557382461,
+      "gain_per_cashout_vs_solver_hold": 0.03514398290096717
+     },
+     "pair": {
+      "decisions_per_1000_rounds": 141.7425,
+      "cashout_rate": 0.08255110499673704,
+      "mean_tc_at_cashout": 0.05666278769258687,
+      "gain_per_cashout_vs_solver_hold": 0.0198777113019811
+     },
+     "soft 2-card": {
+      "decisions_per_1000_rounds": 95.1315,
+      "cashout_rate": 0.12722389534486475,
+      "mean_tc_at_cashout": 0.8253478675276658,
+      "gain_per_cashout_vs_solver_hold": 0.016582787331016695
+     }
+    }
+   },
+   "insurance_offered": 153426,
+   "insurance_taken": 15747,
+   "top_disagreements": [
+    {
+     "cell": "H15vT: cashout (basic hit)",
+     "per_1000_rounds": 6.8545,
+     "mean_tc": 1.672151959824355
+    },
+    {
+     "cell": "H13vT: cashout (basic hit)",
+     "per_1000_rounds": 6.3285,
+     "mean_tc": 1.3930677276028085
+    },
+    {
+     "cell": "H12vT: cashout (basic hit)",
+     "per_1000_rounds": 5.5145,
+     "mean_tc": 1.4903677011145169
+    },
+    {
+     "cell": "H14vT: cashout (basic hit)",
+     "per_1000_rounds": 5.4005,
+     "mean_tc": 1.5922361789314514
+    },
+    {
+     "cell": "H16vT: stand (basic hit)",
+     "per_1000_rounds": 4.6165,
+     "mean_tc": 0.11067827470327218
+    },
+    {
+     "cell": "H16vT/3c: stand (basic hit)",
+     "per_1000_rounds": 4.1895,
+     "mean_tc": -0.27964428646552064
+    },
+    {
+     "cell": "H16vT: cashout (basic hit)",
+     "per_1000_rounds": 3.224,
+     "mean_tc": 1.9073340208778975
+    },
+    {
+     "cell": "H12v4: hit (basic stand)",
+     "per_1000_rounds": 2.847,
+     "mean_tc": -1.2175336112274904
+    },
+    {
+     "cell": "H15vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.799,
+     "mean_tc": 1.4279528661501746
+    },
+    {
+     "cell": "H17vT: cashout (basic stand)",
+     "per_1000_rounds": 2.65,
+     "mean_tc": 2.3604672882393873
+    },
+    {
+     "cell": "H14vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.65,
+     "mean_tc": 0.9345935894736536
+    },
+    {
+     "cell": "H18vT: cashout (basic stand)",
+     "per_1000_rounds": 2.53,
+     "mean_tc": 2.0847831210558283
+    },
+    {
+     "cell": "PTTvT: cashout (basic stand)",
+     "per_1000_rounds": 2.507,
+     "mean_tc": 2.200073689237631
+    },
+    {
+     "cell": "H13v7: cashout (basic hit)",
+     "per_1000_rounds": 2.3245,
+     "mean_tc": 1.1633301998275476
+    },
+    {
+     "cell": "H19vT: cashout (basic stand)",
+     "per_1000_rounds": 2.291,
+     "mean_tc": 2.327655017698056
+    },
+    {
+     "cell": "H16vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.157,
+     "mean_tc": 1.3682134807978172
+    },
+    {
+     "cell": "H13v2: hit (basic stand)",
+     "per_1000_rounds": 2.1375,
+     "mean_tc": -1.2579827989893124
+    },
+    {
+     "cell": "H13vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.121,
+     "mean_tc": 0.8765743716109008
+    },
+    {
+     "cell": "H14v7: cashout (basic hit)",
+     "per_1000_rounds": 2.0905,
+     "mean_tc": 1.1889484875134486
+    },
+    {
+     "cell": "H11vT: double (basic hit)",
+     "per_1000_rounds": 2.0895,
+     "mean_tc": 1.0171336432269187
+    },
+    {
+     "cell": "H15v9: cashout (basic hit)",
+     "per_1000_rounds": 1.9175,
+     "mean_tc": 1.6027296151668604
+    },
+    {
+     "cell": "H13v6: cashout (basic stand)",
+     "per_1000_rounds": 1.902,
+     "mean_tc": -1.2338629197148376
+    },
+    {
+     "cell": "H12v9: cashout (basic hit)",
+     "per_1000_rounds": 1.861,
+     "mean_tc": 1.118212367942909
+    },
+    {
+     "cell": "H13v5: cashout (basic stand)",
+     "per_1000_rounds": 1.823,
+     "mean_tc": -1.6996489608329297
+    },
+    {
+     "cell": "H14v8: cashout (basic hit)",
+     "per_1000_rounds": 1.753,
+     "mean_tc": 1.3751413519139826
+    }
+   ],
+   "bet_spread": {
+    "1": 0.759417,
+    "2": 0.055956,
+    "3": 0.041279,
+    "4": 0.0311635,
+    "5": 0.0239385,
+    "6": 0.0185725,
+    "7": 0.014541,
+    "8": 0.011433,
+    "9": 0.009008,
+    "10": 0.007211,
+    "11": 0.0055975,
+    "12": 0.021883
+   },
+   "wall_seconds": 36.899952375000794
+  },
+  {
+   "rounds": 2000000,
+   "net": 9585.5,
+   "wagered": 3103979.0,
+   "ev_per_round": 0.00479275,
+   "std_per_round": 2.221442696660762,
+   "edge": 0.0028484467565004826,
+   "main_rtp": 1.0028484467565004,
+   "edge_se": 0.0007988717861306266,
+   "main_std_per_unit": 1.1297753145431508,
+   "wins": 893895,
+   "losses": 979099,
+   "pushes": 174728,
+   "blackjacks": 90327,
+   "charlies": 5179,
+   "cashouts": 0,
+   "cashout_net": 0.0,
+   "doubles": 179899,
+   "splits": 47722,
+   "dealer_bust_rate": 0.268593,
+   "insurance": {
+    "wagered": 29095.0,
+    "net": 1727.0
+   },
+   "side_bets": {
+    "perfect_pairs": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "twenty_one_plus_three": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "crazy_7": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "bust_bonus": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    }
+   },
+   "max_drawdown": 1351.5,
+   "rounds_per_sec": 356478.71660539036,
+   "agent": "hilo_nosides",
+   "unit": 1.0,
+   "ev_per_round_units": 0.00479275,
+   "ev_se_units": 0.0015707971948261555,
+   "main_ev_per_round_units": 0.00392925,
+   "avg_bet_units": 1.379436,
+   "max_bet": 12,
+   "edge_on_wagered_main": 0.002555706166476524,
+   "agreement_basic": 0.982832104761367,
+   "decisions": 2709243,
+   "actions": {
+    "stand": 1280228,
+    "hit": 1201394,
+    "double": 179899,
+    "split": 47722
+   },
+   "cashouts_per_1000_rounds": 0.0,
+   "cashout_mean_offer": null,
+   "cashout_diagnostic": {
+    "cashouts": 0,
+    "mean_cashout_ev": null,
+    "mean_hold_ev_solver": null,
+    "mean_hold_return_mc": null,
+    "gain_per_cashout_vs_solver_hold": null,
+    "cashout_rate_by_tc": {
+     "-4": 0.0,
+     "-3": 0.0,
+     "-2": 0.0,
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "3": 0.0,
+     "4": 0.0
+    },
+    "cashout_rate_overall": 0.0,
+    "mean_tc_at_cashout": null,
+    "by_class": {
+     "3+ cards": {
+      "decisions_per_1000_rounds": 388.092,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 2-6": {
+      "decisions_per_1000_rounds": 153.3495,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 7-A": {
+      "decisions_per_1000_rounds": 220.6615,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 17-21": {
+      "decisions_per_1000_rounds": 158.1895,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard <=11": {
+      "decisions_per_1000_rounds": 197.035,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "pair": {
+      "decisions_per_1000_rounds": 141.741,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "soft 2-card": {
+      "decisions_per_1000_rounds": 95.553,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     }
+    }
+   },
+   "insurance_offered": 153683,
+   "insurance_taken": 9168,
+   "top_disagreements": [
+    {
+     "cell": "H16vT: stand (basic hit)",
+     "per_1000_rounds": 8.511,
+     "mean_tc": 1.390066792491809
+    },
+    {
+     "cell": "H12v4: hit (basic stand)",
+     "per_1000_rounds": 2.931,
+     "mean_tc": -1.639705781257427
+    },
+    {
+     "cell": "H12v3: stand (basic hit)",
+     "per_1000_rounds": 1.925,
+     "mean_tc": 2.535576882475124
+    },
+    {
+     "cell": "H12v6: hit (basic stand)",
+     "per_1000_rounds": 1.655,
+     "mean_tc": -2.5543100539335843
+    },
+    {
+     "cell": "H13v2: hit (basic stand)",
+     "per_1000_rounds": 1.6205,
+     "mean_tc": -2.454870342144217
+    },
+    {
+     "cell": "H11vT: double (basic hit)",
+     "per_1000_rounds": 0.963,
+     "mean_tc": 4.456533922269964
+    },
+    {
+     "cell": "H9v2: double (basic hit)",
+     "per_1000_rounds": 0.896,
+     "mean_tc": 2.5078299065605743
+    },
+    {
+     "cell": "H12v5: hit (basic stand)",
+     "per_1000_rounds": 0.8425,
+     "mean_tc": -3.5256861427249997
+    },
+    {
+     "cell": "H13v3: hit (basic stand)",
+     "per_1000_rounds": 0.8235,
+     "mean_tc": -3.507340345135477
+    },
+    {
+     "cell": "P88vT: stand (basic hit)",
+     "per_1000_rounds": 0.811,
+     "mean_tc": 1.4812086537999334
+    },
+    {
+     "cell": "H15vT: stand (basic hit)",
+     "per_1000_rounds": 0.7165,
+     "mean_tc": 5.4176205490758145
+    },
+    {
+     "cell": "H12v2: stand (basic hit)",
+     "per_1000_rounds": 0.5335,
+     "mean_tc": 4.511399217782357
+    },
+    {
+     "cell": "H11vA: double (basic hit)",
+     "per_1000_rounds": 0.304,
+     "mean_tc": 3.3821119838460763
+    },
+    {
+     "cell": "H9v7: double (basic hit)",
+     "per_1000_rounds": 0.245,
+     "mean_tc": 4.44756091780494
+    },
+    {
+     "cell": "PTTv6: split (basic stand)",
+     "per_1000_rounds": 0.2175,
+     "mean_tc": 5.479017606398749
+    },
+    {
+     "cell": "PTTv5: split (basic stand)",
+     "per_1000_rounds": 0.11,
+     "mean_tc": 6.323848675602942
+    },
+    {
+     "cell": "H16v9: stand (basic hit)",
+     "per_1000_rounds": 0.0765,
+     "mean_tc": 6.267841329253764
+    },
+    {
+     "cell": "H10vA: double (basic hit)",
+     "per_1000_rounds": 0.0565,
+     "mean_tc": 5.374439736255967
+    },
+    {
+     "cell": "P55vA: double (basic hit)",
+     "per_1000_rounds": 0.018,
+     "mean_tc": 5.206320226423355
+    }
+   ],
+   "bet_spread": {
+    "1": 0.876381,
+    "2": 0.060046,
+    "4": 0.031086,
+    "6": 0.0164305,
+    "8": 0.0081605,
+    "12": 0.007896
+   },
+   "wall_seconds": 6.688675999999759
+  },
+  {
+   "rounds": 2000000,
+   "net": 136805.5,
+   "wagered": 4108107.0,
+   "ev_per_round": 0.06840275,
+   "std_per_round": 10.223018912669213,
+   "edge": 0.0028477218225419665,
+   "main_rtp": 1.002847721822542,
+   "edge_se": 0.0007988717874228697,
+   "main_std_per_unit": 1.1297753163706585,
+   "wins": 893894,
+   "losses": 979100,
+   "pushes": 174728,
+   "blackjacks": 90327,
+   "charlies": 5179,
+   "cashouts": 0,
+   "cashout_net": 0.0,
+   "doubles": 179899,
+   "splits": 47722,
+   "dealer_bust_rate": 0.268593,
+   "insurance": {
+    "wagered": 29095.0,
+    "net": 1727.0
+   },
+   "side_bets": {
+    "perfect_pairs": {
+     "wagered": 41858.0,
+     "net": 1085.0,
+     "rtp": 1.0259209709016197,
+     "bets": 41858,
+     "wins": 3323,
+     "rtp_se": 0.01998287042226943
+    },
+    "twenty_one_plus_three": {
+     "wagered": 55440.0,
+     "net": 1339.0,
+     "rtp": 1.0241522366522366,
+     "bets": 55440,
+     "wins": 5694,
+     "rtp_se": 0.017622744296033537
+    },
+    "crazy_7": {
+     "wagered": 698405.0,
+     "net": 114137.0,
+     "rtp": 1.163425233209957,
+     "bets": 698405,
+     "wins": 61702,
+     "rtp_se": 0.019896001448371385
+    },
+    "bust_bonus": {
+     "wagered": 208425.0,
+     "net": 10661.0,
+     "rtp": 1.051150293870697,
+     "bets": 208425,
+     "wins": 54973,
+     "rtp_se": 0.008484281721752931
+    }
+   },
+   "max_drawdown": 2483.5,
+   "rounds_per_sec": 4402.746891243217,
+   "agent": "hilo",
+   "unit": 1.0,
+   "ev_per_round_units": 0.06840275,
+   "ev_se_units": 0.007228765997346726,
+   "main_ev_per_round_units": 0.00392825,
+   "avg_bet_units": 1.379436,
+   "max_bet": 12,
+   "edge_on_wagered_main": 0.0025550557354358733,
+   "agreement_basic": 0.9828320984245777,
+   "decisions": 2709242,
+   "actions": {
+    "stand": 1280227,
+    "hit": 1201394,
+    "double": 179899,
+    "split": 47722
+   },
+   "cashouts_per_1000_rounds": 0.0,
+   "cashout_mean_offer": null,
+   "cashout_diagnostic": {
+    "cashouts": 0,
+    "mean_cashout_ev": null,
+    "mean_hold_ev_solver": null,
+    "mean_hold_return_mc": null,
+    "gain_per_cashout_vs_solver_hold": null,
+    "cashout_rate_by_tc": {
+     "-4": 0.0,
+     "-3": 0.0,
+     "-2": 0.0,
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "3": 0.0,
+     "4": 0.0
+    },
+    "cashout_rate_overall": 0.0,
+    "mean_tc_at_cashout": null,
+    "by_class": {
+     "3+ cards": {
+      "decisions_per_1000_rounds": 388.0915,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 2-6": {
+      "decisions_per_1000_rounds": 153.3495,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 7-A": {
+      "decisions_per_1000_rounds": 220.662,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 17-21": {
+      "decisions_per_1000_rounds": 158.1895,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard <=11": {
+      "decisions_per_1000_rounds": 197.035,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "pair": {
+      "decisions_per_1000_rounds": 141.741,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "soft 2-card": {
+      "decisions_per_1000_rounds": 95.5525,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     }
+    }
+   },
+   "insurance_offered": 153683,
+   "insurance_taken": 9168,
+   "top_disagreements": [
+    {
+     "cell": "H16vT: stand (basic hit)",
+     "per_1000_rounds": 8.511,
+     "mean_tc": 1.390066792491809
+    },
+    {
+     "cell": "H12v4: hit (basic stand)",
+     "per_1000_rounds": 2.931,
+     "mean_tc": -1.639705781257427
+    },
+    {
+     "cell": "H12v3: stand (basic hit)",
+     "per_1000_rounds": 1.925,
+     "mean_tc": 2.535576882475124
+    },
+    {
+     "cell": "H12v6: hit (basic stand)",
+     "per_1000_rounds": 1.655,
+     "mean_tc": -2.5543100539335843
+    },
+    {
+     "cell": "H13v2: hit (basic stand)",
+     "per_1000_rounds": 1.6205,
+     "mean_tc": -2.454870342144217
+    },
+    {
+     "cell": "H11vT: double (basic hit)",
+     "per_1000_rounds": 0.963,
+     "mean_tc": 4.456533922269964
+    },
+    {
+     "cell": "H9v2: double (basic hit)",
+     "per_1000_rounds": 0.896,
+     "mean_tc": 2.5078299065605743
+    },
+    {
+     "cell": "H12v5: hit (basic stand)",
+     "per_1000_rounds": 0.8425,
+     "mean_tc": -3.5256861427249997
+    },
+    {
+     "cell": "H13v3: hit (basic stand)",
+     "per_1000_rounds": 0.8235,
+     "mean_tc": -3.507340345135477
+    },
+    {
+     "cell": "P88vT: stand (basic hit)",
+     "per_1000_rounds": 0.811,
+     "mean_tc": 1.4812086537999334
+    },
+    {
+     "cell": "H15vT: stand (basic hit)",
+     "per_1000_rounds": 0.7165,
+     "mean_tc": 5.4176205490758145
+    },
+    {
+     "cell": "H12v2: stand (basic hit)",
+     "per_1000_rounds": 0.5335,
+     "mean_tc": 4.511399217782357
+    },
+    {
+     "cell": "H11vA: double (basic hit)",
+     "per_1000_rounds": 0.304,
+     "mean_tc": 3.3821119838460763
+    },
+    {
+     "cell": "H9v7: double (basic hit)",
+     "per_1000_rounds": 0.245,
+     "mean_tc": 4.44756091780494
+    },
+    {
+     "cell": "PTTv6: split (basic stand)",
+     "per_1000_rounds": 0.2175,
+     "mean_tc": 5.479017606398749
+    },
+    {
+     "cell": "PTTv5: split (basic stand)",
+     "per_1000_rounds": 0.11,
+     "mean_tc": 6.323848675602942
+    },
+    {
+     "cell": "H16v9: stand (basic hit)",
+     "per_1000_rounds": 0.0765,
+     "mean_tc": 6.267841329253764
+    },
+    {
+     "cell": "H10vA: double (basic hit)",
+     "per_1000_rounds": 0.0565,
+     "mean_tc": 5.374439736255967
+    },
+    {
+     "cell": "P55vA: double (basic hit)",
+     "per_1000_rounds": 0.018,
+     "mean_tc": 5.206320226423355
+    }
+   ],
+   "bet_spread": {
+    "1": 0.876381,
+    "2": 0.060046,
+    "4": 0.031086,
+    "6": 0.0164305,
+    "8": 0.0081605,
+    "12": 0.007896
+   },
+   "wall_seconds": 455.40137945900096
+  },
+  {
+   "rounds": 2000000,
+   "net": -4126.0,
+   "wagered": 2230879.0,
+   "ev_per_round": -0.002063,
+   "std_per_round": 1.131820212768353,
+   "edge": -0.002063,
+   "main_rtp": 0.997937,
+   "edge_se": 0.0008003177475325034,
+   "main_std_per_unit": 1.131820212768353,
+   "wins": 894563,
+   "losses": 978328,
+   "pushes": 174139,
+   "blackjacks": 90398,
+   "charlies": 5156,
+   "cashouts": 0,
+   "cashout_net": 0.0,
+   "doubles": 183849,
+   "splits": 47030,
+   "dealer_bust_rate": 0.2685585,
+   "insurance": {
+    "wagered": 0.0,
+    "net": 0.0
+   },
+   "side_bets": {
+    "perfect_pairs": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "twenty_one_plus_three": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "crazy_7": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "bust_bonus": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    }
+   },
+   "max_drawdown": 1514.0,
+   "rounds_per_sec": 32757.877071726547,
+   "agent": "solver_nocash",
+   "unit": 1.0,
+   "ev_per_round_units": -0.002063,
+   "ev_se_units": 0.0008003177475325034,
+   "main_ev_per_round_units": -0.002063,
+   "avg_bet_units": 1.0,
+   "max_bet": 1,
+   "edge_on_wagered_main": -0.0018494951989776226,
+   "agreement_basic": 0.9599808957923094,
+   "decisions": 2707257,
+   "actions": {
+    "stand": 1289763,
+    "hit": 1186615,
+    "double": 183849,
+    "split": 47030
+   },
+   "cashouts_per_1000_rounds": 0.0,
+   "cashout_mean_offer": null,
+   "cashout_diagnostic": {
+    "cashouts": 0,
+    "mean_cashout_ev": null,
+    "mean_hold_ev_solver": null,
+    "mean_hold_return_mc": null,
+    "gain_per_cashout_vs_solver_hold": null,
+    "cashout_rate_by_tc": {
+     "-4": 0.0,
+     "-3": 0.0,
+     "-2": 0.0,
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "3": 0.0,
+     "4": 0.0
+    },
+    "cashout_rate_overall": 0.0,
+    "mean_tc_at_cashout": null,
+    "by_class": {
+     "3+ cards": {
+      "decisions_per_1000_rounds": 387.234,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 2-6": {
+      "decisions_per_1000_rounds": 152.8665,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 12-16 v 7-A": {
+      "decisions_per_1000_rounds": 221.0435,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard 17-21": {
+      "decisions_per_1000_rounds": 158.511,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "hard <=11": {
+      "decisions_per_1000_rounds": 196.777,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "pair": {
+      "decisions_per_1000_rounds": 141.7125,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     },
+     "soft 2-card": {
+      "decisions_per_1000_rounds": 95.484,
+      "cashout_rate": 0.0,
+      "mean_tc_at_cashout": null,
+      "gain_per_cashout_vs_solver_hold": null
+     }
+    }
+   },
+   "insurance_offered": 153559,
+   "insurance_taken": 0,
+   "top_disagreements": [
+    {
+     "cell": "H16vT: stand (basic hit)",
+     "per_1000_rounds": 7.0145,
+     "mean_tc": 0.829805691675668
+    },
+    {
+     "cell": "H16vT/3c: stand (basic hit)",
+     "per_1000_rounds": 6.991,
+     "mean_tc": 0.6991427331079686
+    },
+    {
+     "cell": "H12v4: hit (basic stand)",
+     "per_1000_rounds": 3.0405,
+     "mean_tc": -1.2252862211972693
+    },
+    {
+     "cell": "H11vT: double (basic hit)",
+     "per_1000_rounds": 2.767,
+     "mean_tc": 1.2178268505618388
+    },
+    {
+     "cell": "H13v2: hit (basic stand)",
+     "per_1000_rounds": 2.2085,
+     "mean_tc": -1.2640499905342402
+    },
+    {
+     "cell": "H12v6: hit (basic stand)",
+     "per_1000_rounds": 1.992,
+     "mean_tc": -1.421314646579183
+    },
+    {
+     "cell": "H12v3: stand (basic hit)",
+     "per_1000_rounds": 1.827,
+     "mean_tc": 1.9161786253440949
+    },
+    {
+     "cell": "H16vT/4c: stand (basic hit)",
+     "per_1000_rounds": 1.595,
+     "mean_tc": 0.8883534908164515
+    },
+    {
+     "cell": "H12v5: hit (basic stand)",
+     "per_1000_rounds": 1.329,
+     "mean_tc": -2.223925372801886
+    },
+    {
+     "cell": "H15vT: stand (basic hit)",
+     "per_1000_rounds": 1.2915,
+     "mean_tc": 3.3217250574508057
+    },
+    {
+     "cell": "H13v3: hit (basic stand)",
+     "per_1000_rounds": 1.121,
+     "mean_tc": -2.072746599745141
+    },
+    {
+     "cell": "H9v2: double (basic hit)",
+     "per_1000_rounds": 1.0045,
+     "mean_tc": 1.9748740885214553
+    },
+    {
+     "cell": "H12v2: stand (basic hit)",
+     "per_1000_rounds": 0.9455,
+     "mean_tc": 2.4229050500775973
+    },
+    {
+     "cell": "P88vT: stand (basic hit)",
+     "per_1000_rounds": 0.705,
+     "mean_tc": 0.9707149058382969
+    },
+    {
+     "cell": "H9v3: hit (basic double)",
+     "per_1000_rounds": 0.677,
+     "mean_tc": -1.9153545422108929
+    },
+    {
+     "cell": "H15vT/3c: stand (basic hit)",
+     "per_1000_rounds": 0.6715,
+     "mean_tc": 3.4095623928602716
+    },
+    {
+     "cell": "H11vA: double (basic hit)",
+     "per_1000_rounds": 0.5705,
+     "mean_tc": 2.0619065000288366
+    },
+    {
+     "cell": "H13v2/3c: hit (basic stand)",
+     "per_1000_rounds": 0.5435,
+     "mean_tc": -1.4016592570489634
+    },
+    {
+     "cell": "H13v4: hit (basic stand)",
+     "per_1000_rounds": 0.509,
+     "mean_tc": -3.0499928363955426
+    },
+    {
+     "cell": "H10v9: hit (basic double)",
+     "per_1000_rounds": 0.4845,
+     "mean_tc": -2.8795682695749796
+    },
+    {
+     "cell": "H14vT: stand (basic hit)",
+     "per_1000_rounds": 0.4735,
+     "mean_tc": 2.3401872707057163
+    },
+    {
+     "cell": "H8v6: double (basic hit)",
+     "per_1000_rounds": 0.4485,
+     "mean_tc": 2.783909500326892
+    },
+    {
+     "cell": "S18v2: double (basic stand)",
+     "per_1000_rounds": 0.4375,
+     "mean_tc": 0.5143689946315133
+    },
+    {
+     "cell": "H16v9: stand (basic hit)",
+     "per_1000_rounds": 0.432,
+     "mean_tc": 1.9917881603315768
+    },
+    {
+     "cell": "S15v4: double (basic hit)",
+     "per_1000_rounds": 0.4155,
+     "mean_tc": 0.8862000362747632
+    }
+   ],
+   "bet_spread": {
+    "1": 1.0
+   },
+   "wall_seconds": 62.17859649999991
+  },
+  {
+   "rounds": 2000000,
+   "net": 3626.680000000104,
+   "wagered": 2184547.0,
+   "ev_per_round": 0.001813340000000052,
+   "std_per_round": 1.0238728309208913,
+   "edge": 0.001813340000000052,
+   "main_rtp": 1.00181334,
+   "edge_se": 0.0007239874218168297,
+   "main_std_per_unit": 1.0238728309208913,
+   "wins": 837977,
+   "losses": 1060086,
+   "pushes": 142066,
+   "blackjacks": 90390,
+   "charlies": 2959,
+   "cashouts": 420469,
+   "cashout_net": -80772.3200000068,
+   "doubles": 144418,
+   "splits": 40129,
+   "dealer_bust_rate": 0.268511,
+   "insurance": {
+    "wagered": 0.0,
+    "net": 0.0
+   },
+   "side_bets": {
+    "perfect_pairs": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "twenty_one_plus_three": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "crazy_7": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    },
+    "bust_bonus": {
+     "wagered": 0.0,
+     "net": 0.0,
+     "rtp": null,
+     "bets": 0,
+     "wins": 0,
+     "rtp_se": null
+    }
+   },
+   "max_drawdown": 922.2900000000095,
+   "rounds_per_sec": 26610.471677744103,
+   "agent": "solver",
+   "unit": 1.0,
+   "ev_per_round_units": 0.001813340000000052,
+   "ev_se_units": 0.0007239874218168297,
+   "main_ev_per_round_units": 0.001813340000000052,
+   "avg_bet_units": 1.0,
+   "max_bet": 1,
+   "edge_on_wagered_main": 0.0016601519674331127,
+   "agreement_basic": 0.8097697838690036,
+   "decisions": 2558726,
+   "actions": {
+    "stand": 1018697,
+    "hit": 935013,
+    "double": 144418,
+    "split": 40129,
+    "cashout": 420469
+   },
+   "cashouts_per_1000_rounds": 210.2345,
+   "cashout_mean_offer": 0.8078994646454578,
+   "cashout_diagnostic": {
+    "cashouts": 420469,
+    "mean_cashout_ev": -0.19210053535458452,
+    "mean_hold_ev_solver": -0.21333076603055048,
+    "mean_hold_return_mc": -0.22006711553051828,
+    "gain_per_cashout_vs_solver_hold": 0.02123023067596596,
+    "cashout_rate_by_tc": {
+     "-4": 0.2432843765697278,
+     "-3": 0.2157033913659348,
+     "-2": 0.18238893915937268,
+     "-1": 0.13039454222424493,
+     "0": 0.09269739506542116,
+     "1": 0.1659101204618784,
+     "2": 0.24390232143287613,
+     "3": 0.2868387850027305,
+     "4": 0.3292651305848377
+    },
+    "cashout_rate_overall": 0.16432748172332637,
+    "mean_tc_at_cashout": 0.1471680083447442,
+    "by_class": {
+     "3+ cards": {
+      "decisions_per_1000_rounds": 317.69,
+      "cashout_rate": 0.1494884950738141,
+      "mean_tc_at_cashout": 0.39350175070431714,
+      "gain_per_cashout_vs_solver_hold": 0.017313758836954116
+     },
+     "hard 12-16 v 2-6": {
+      "decisions_per_1000_rounds": 151.1385,
+      "cashout_rate": 0.20086873959977108,
+      "mean_tc_at_cashout": -1.5231408364031687,
+      "gain_per_cashout_vs_solver_hold": 0.02130874363554424
+     },
+     "hard 12-16 v 7-A": {
+      "decisions_per_1000_rounds": 220.8955,
+      "cashout_rate": 0.25886674920946784,
+      "mean_tc_at_cashout": 1.4711469550512173,
+      "gain_per_cashout_vs_solver_hold": 0.019713844541520056
+     },
+     "hard 17-21": {
+      "decisions_per_1000_rounds": 157.1435,
+      "cashout_rate": 0.15923343949956567,
+      "mean_tc_at_cashout": -0.22102526517065918,
+      "gain_per_cashout_vs_solver_hold": 0.017961886932627305
+     },
+     "hard <=11": {
+      "decisions_per_1000_rounds": 195.67,
+      "cashout_rate": 0.12804211171871008,
+      "mean_tc_at_cashout": -1.3006843662737047,
+      "gain_per_cashout_vs_solver_hold": 0.03707059512611298
+     },
+     "pair": {
+      "decisions_per_1000_rounds": 141.707,
+      "cashout_rate": 0.08800553254249967,
+      "mean_tc_at_cashout": 0.08898693467599139,
+      "gain_per_cashout_vs_solver_hold": 0.020981167946303152
+     },
+     "soft 2-card": {
+      "decisions_per_1000_rounds": 95.1185,
+      "cashout_rate": 0.13303931411870457,
+      "mean_tc_at_cashout": 0.8990768225383773,
+      "gain_per_cashout_vs_solver_hold": 0.01793875657493111
+     }
+    }
+   },
+   "insurance_offered": 153413,
+   "insurance_taken": 0,
+   "top_disagreements": [
+    {
+     "cell": "H15vT: cashout (basic hit)",
+     "per_1000_rounds": 6.9375,
+     "mean_tc": 1.6603770213680389
+    },
+    {
+     "cell": "H13vT: cashout (basic hit)",
+     "per_1000_rounds": 6.636,
+     "mean_tc": 1.3118052052384308
+    },
+    {
+     "cell": "H12vT: cashout (basic hit)",
+     "per_1000_rounds": 5.7165,
+     "mean_tc": 1.4090802989789775
+    },
+    {
+     "cell": "H14vT: cashout (basic hit)",
+     "per_1000_rounds": 5.2555,
+     "mean_tc": 1.5872297532663946
+    },
+    {
+     "cell": "H16vT: stand (basic hit)",
+     "per_1000_rounds": 4.276,
+     "mean_tc": -0.0008532153223083456
+    },
+    {
+     "cell": "H16vT/3c: stand (basic hit)",
+     "per_1000_rounds": 3.63,
+     "mean_tc": -0.29950802622989237
+    },
+    {
+     "cell": "H16vT: cashout (basic hit)",
+     "per_1000_rounds": 3.481,
+     "mean_tc": 1.996519478627684
+    },
+    {
+     "cell": "H14vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.874,
+     "mean_tc": 0.9457053901261797
+    },
+    {
+     "cell": "H12v4: hit (basic stand)",
+     "per_1000_rounds": 2.852,
+     "mean_tc": -1.1934269574587988
+    },
+    {
+     "cell": "H15vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.8505,
+     "mean_tc": 1.3984352520216505
+    },
+    {
+     "cell": "PTTvT: cashout (basic stand)",
+     "per_1000_rounds": 2.72,
+     "mean_tc": 2.2304410574444273
+    },
+    {
+     "cell": "H11vT: double (basic hit)",
+     "per_1000_rounds": 2.3055,
+     "mean_tc": 0.9648275655338626
+    },
+    {
+     "cell": "H18vT: cashout (basic stand)",
+     "per_1000_rounds": 2.228,
+     "mean_tc": 2.143749748430212
+    },
+    {
+     "cell": "H19vT: cashout (basic stand)",
+     "per_1000_rounds": 2.203,
+     "mean_tc": 2.402863441453302
+    },
+    {
+     "cell": "H13v7: cashout (basic hit)",
+     "per_1000_rounds": 2.125,
+     "mean_tc": 1.2443377759717662
+    },
+    {
+     "cell": "H17vT: cashout (basic stand)",
+     "per_1000_rounds": 2.121,
+     "mean_tc": 2.555216144237641
+    },
+    {
+     "cell": "H13v2: hit (basic stand)",
+     "per_1000_rounds": 2.114,
+     "mean_tc": -1.25925001517898
+    },
+    {
+     "cell": "H12v9: cashout (basic hit)",
+     "per_1000_rounds": 2.1,
+     "mean_tc": 1.0840977351025178
+    },
+    {
+     "cell": "H16vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 2.043,
+     "mean_tc": 1.552936269302315
+    },
+    {
+     "cell": "H14v7: cashout (basic hit)",
+     "per_1000_rounds": 2.036,
+     "mean_tc": 1.265139292852793
+    },
+    {
+     "cell": "H13vT/3c: cashout (basic hit)",
+     "per_1000_rounds": 1.889,
+     "mean_tc": 1.0192050025288664
+    },
+    {
+     "cell": "H13v5: cashout (basic stand)",
+     "per_1000_rounds": 1.8775,
+     "mean_tc": -1.7077363138667454
+    },
+    {
+     "cell": "H13v6: cashout (basic stand)",
+     "per_1000_rounds": 1.8735,
+     "mean_tc": -1.1910136637784328
+    },
+    {
+     "cell": "H15v9: cashout (basic hit)",
+     "per_1000_rounds": 1.866,
+     "mean_tc": 1.664925048644185
+    },
+    {
+     "cell": "H14v8: cashout (basic hit)",
+     "per_1000_rounds": 1.791,
+     "mean_tc": 1.4000713964392928
+    }
+   ],
+   "bet_spread": {
+    "1": 1.0
+   },
+   "wall_seconds": 76.19686141700004
+  }
+ ],
+ "duplicate": [
+  {
+   "rounds": 2000000,
+   "ev_a": 0.0017857200000000934,
+   "ev_b": -0.004444,
+   "diff": 0.006229720000000242,
+   "diff_se": 0.00037895372678518175,
+   "ev_a_se": 0.0007241090127542922,
+   "agreement_basic": 0.8096282728238455,
+   "rounds_differing": 0.224065,
+   "a": "nn_v1:flat",
+   "b": "basic",
+   "wall_seconds": 19.22485612499986
+  },
+  {
+   "rounds": 2000000,
+   "ev_a": -0.0031085,
+   "ev_b": -0.004494,
+   "diff": 0.0013855,
+   "diff_se": 0.00019477882378450434,
+   "ev_a_se": 0.0007997836698844726,
+   "agreement_basic": 0.9596658176305821,
+   "rounds_differing": 0.025015,
+   "a": "nn_v1:flat_nocash",
+   "b": "basic",
+   "wall_seconds": 19.66044379199957
+  },
+  {
+   "rounds": 2000000,
+   "ev_a": -0.00397125,
+   "ev_b": -0.00443325,
+   "diff": 0.000462,
+   "diff_se": 0.00011938129366864812,
+   "ev_a_se": 0.0007990873244437799,
+   "agreement_basic": 0.9828858784332923,
+   "rounds_differing": 0.008588,
+   "a": "hilo_nosides",
+   "b": "basic",
+   "wall_seconds": 13.011067249999542
+  },
+  {
+   "rounds": 2000000,
+   "ev_a": 0.001950150000000091,
+   "ev_b": -0.00450025,
+   "diff": 0.006450400000000217,
+   "diff_se": 0.0003787776978254363,
+   "ev_a_se": 0.0007244446039259628,
+   "agreement_basic": 0.8096542060532511,
+   "rounds_differing": 0.224122,
+   "a": "solver",
+   "b": "basic",
+   "wall_seconds": 73.75261033400056
+  },
+  {
+   "rounds": 2000000,
+   "ev_a": -0.00310475,
+   "ev_b": -0.00464525,
+   "diff": 0.0015405,
+   "diff_se": 0.00019450209106812964,
+   "ev_a_se": 0.000800702733705661,
+   "agreement_basic": 0.9602260767449675,
+   "rounds_differing": 0.0250285,
+   "a": "solver_nocash",
+   "b": "basic",
+   "wall_seconds": 70.38905316699856
+  }
+ ],
+ "analysis": {
+  "nn_v1": {
+   "regret": {
+    "basic": {
+     "regret": 0.005681854544947699,
+     "agree_solver": 0.7786,
+     "cashout_rate": 0.0,
+     "n": 60000
+    },
+    "net": {
+     "regret": 0.0003241418664842099,
+     "agree_solver": 0.9532,
+     "cashout_rate": 0.17891666666666667,
+     "n": 60000
+    },
+    "q_rmse_vs_solver": 0.007547363570212589,
+    "q_bias_vs_solver": 0.0006845770842169884
+   },
+   "deviations": [
+    {
+     "name": "insurance",
+     "hilo_index": 3.0,
+     "nn_index": 4.043011762380152,
+     "status": "crosses"
+    },
+    {
+     "name": "16 v T stand",
+     "hilo_index": 0.0,
+     "nn_index": 0.09148596079035551,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    },
+    {
+     "name": "15 v T stand",
+     "hilo_index": 4.0,
+     "nn_index": 5.382744778637501,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    },
+    {
+     "name": "TT v 5 split",
+     "hilo_index": 5.0,
+     "nn_index": 5.234022995949086,
+     "status": "crosses",
+     "rule": "split over stand when TC >= index"
+    },
+    {
+     "name": "TT v 6 split",
+     "hilo_index": 4.0,
+     "nn_index": 4.277193588388525,
+     "status": "crosses",
+     "rule": "split over stand when TC >= index"
+    },
+    {
+     "name": "11 v T double",
+     "hilo_index": 3.0,
+     "nn_index": null,
+     "status": "never",
+     "rule": "double over hit when TC >= index"
+    },
+    {
+     "name": "12 v 3 stand",
+     "hilo_index": 1.0,
+     "nn_index": 1.1842991214944965,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    },
+    {
+     "name": "12 v 2 stand",
+     "hilo_index": 3.0,
+     "nn_index": 2.7271642764015644,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    },
+    {
+     "name": "11 v A double",
+     "hilo_index": 2.0,
+     "nn_index": 1.8732743430047092,
+     "status": "crosses",
+     "rule": "double over hit when TC >= index"
+    },
+    {
+     "name": "9 v 2 double",
+     "hilo_index": 1.0,
+     "nn_index": 1.052475132180303,
+     "status": "crosses",
+     "rule": "double over hit when TC >= index"
+    },
+    {
+     "name": "10 v A double",
+     "hilo_index": 4.0,
+     "nn_index": 4.254056977179313,
+     "status": "crosses",
+     "rule": "double over hit when TC >= index"
+    },
+    {
+     "name": "9 v 7 double",
+     "hilo_index": 3.0,
+     "nn_index": 4.030742874994482,
+     "status": "crosses",
+     "rule": "double over hit when TC >= index"
+    },
+    {
+     "name": "16 v 9 stand",
+     "hilo_index": 5.0,
+     "nn_index": 4.701639465600829,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    },
+    {
+     "name": "13 v 2 hit",
+     "hilo_index": -1.0,
+     "nn_index": -1.1047258562957,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    },
+    {
+     "name": "12 v 4 hit",
+     "hilo_index": 0.0,
+     "nn_index": 0.015325477369297518,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    },
+    {
+     "name": "12 v 5 hit",
+     "hilo_index": -2.0,
+     "nn_index": -1.2740935779587454,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    },
+    {
+     "name": "12 v 6 hit",
+     "hilo_index": -1.0,
+     "nn_index": -1.0120934971926916,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    },
+    {
+     "name": "13 v 3 hit",
+     "hilo_index": -2.0,
+     "nn_index": -2.1939730961049486,
+     "status": "crosses",
+     "rule": "stand over hit when TC >= index"
+    }
+   ],
+   "charts": {
+    "-3.0": {
+     "hard": {
+      "5": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "6": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "7": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "8": [
+       "hit",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "9": [
+       "hit",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "10": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit"
+      ],
+      "11": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "cashout"
+      ],
+      "12": [
+       "hit",
+       "hit",
+       "hit",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "13": [
+       "hit",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "14": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "15": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "16": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "17": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "cashout"
+      ],
+      "18": [
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "cashout",
+       "cashout",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "19": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "20": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ]
+     },
+     "soft": {
+      "13": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "14": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "15": [
+       "hit",
+       "hit",
+       "hit",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "16": [
+       "hit",
+       "hit",
+       "hit",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "17": [
+       "hit",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "18": [
+       "stand",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "stand",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "19": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "20": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ]
+     },
+     "pairs": {
+      "22": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "33": [
+       "hit",
+       "split",
+       "split",
+       "cashout",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "44": [
+       "hit",
+       "cashout",
+       "hit",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "55": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "cashout"
+      ],
+      "66": [
+       "split",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "77": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "88": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "split",
+       "split",
+       "split",
+       "hit",
+       "split"
+      ],
+      "99": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "split",
+       "stand",
+       "stand"
+      ],
+      "TT": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "AA": [
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout"
+      ]
+     }
+    },
+    "0.0": {
+     "hard": {
+      "5": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "6": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "7": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "8": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "9": [
+       "hit",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "10": [
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "hit"
+      ],
+      "11": [
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "hit"
+      ],
+      "12": [
+       "hit",
+       "hit",
+       "hit",
+       "stand",
+       "stand",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "13": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "14": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "15": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "16": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "17": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "18": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "19": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "20": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ]
+     },
+     "soft": {
+      "13": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "double",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "14": [
+       "hit",
+       "hit",
+       "hit",
+       "double",
+       "double",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "15": [
+       "hit",
+       "hit",
+       "hit",
+       "double",
+       "double",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "16": [
+       "hit",
+       "hit",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "17": [
+       "hit",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "18": [
+       "stand",
+       "double",
+       "double",
+       "double",
+       "double",
+       "stand",
+       "stand",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "19": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "20": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ]
+     },
+     "pairs": {
+      "22": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "33": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "44": [
+       "hit",
+       "hit",
+       "hit",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "55": [
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "hit"
+      ],
+      "66": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "77": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "88": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "stand",
+       "split"
+      ],
+      "99": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "stand",
+       "split",
+       "split",
+       "stand",
+       "stand"
+      ],
+      "TT": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "AA": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split"
+      ]
+     }
+    },
+    "3.0": {
+     "hard": {
+      "5": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "cashout",
+       "cashout"
+      ],
+      "6": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "cashout",
+       "cashout",
+       "hit",
+       "cashout",
+       "cashout"
+      ],
+      "7": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "8": [
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "double",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "9": [
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "10": [
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "hit"
+      ],
+      "11": [
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "double"
+      ],
+      "12": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "hit",
+       "cashout",
+       "cashout",
+       "cashout"
+      ],
+      "13": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout"
+      ],
+      "14": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout"
+      ],
+      "15": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout"
+      ],
+      "16": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout"
+      ],
+      "17": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "cashout",
+       "cashout",
+       "stand"
+      ],
+      "18": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "cashout",
+       "stand"
+      ],
+      "19": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "stand"
+      ],
+      "20": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ]
+     },
+     "soft": {
+      "13": [
+       "hit",
+       "hit",
+       "hit",
+       "double",
+       "double",
+       "hit",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit"
+      ],
+      "14": [
+       "hit",
+       "hit",
+       "double",
+       "double",
+       "double",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit"
+      ],
+      "15": [
+       "hit",
+       "hit",
+       "double",
+       "double",
+       "double",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout"
+      ],
+      "16": [
+       "hit",
+       "hit",
+       "double",
+       "double",
+       "double",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout"
+      ],
+      "17": [
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "cashout",
+       "cashout",
+       "cashout",
+       "hit"
+      ],
+      "18": [
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "stand",
+       "stand",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "19": [
+       "stand",
+       "stand",
+       "stand",
+       "double",
+       "double",
+       "stand",
+       "stand",
+       "stand",
+       "cashout",
+       "stand"
+      ],
+      "20": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ]
+     },
+     "pairs": {
+      "22": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "33": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "44": [
+       "hit",
+       "hit",
+       "hit",
+       "split",
+       "split",
+       "hit",
+       "hit",
+       "hit",
+       "hit",
+       "hit"
+      ],
+      "55": [
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "double",
+       "hit",
+       "hit"
+      ],
+      "66": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout"
+      ],
+      "77": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "cashout",
+       "cashout",
+       "cashout",
+       "cashout"
+      ],
+      "88": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "cashout",
+       "split"
+      ],
+      "99": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "cashout",
+       "split"
+      ],
+      "TT": [
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand",
+       "stand"
+      ],
+      "AA": [
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split",
+       "split"
+      ]
+     }
+    }
+   },
+   "bet_validation": {
+    "main": {
+     "mean_pred": 0.00033592715044505894,
+     "mean_exact": -0.0037544658862375003,
+     "corr": 0.8644740357963671,
+     "mae": 0.004547781442625133,
+     "share_pos_pred": 0.3837,
+     "share_pos_exact": 0.29775
+    },
+    "perfect_pairs": {
+     "mean_pred": -0.04104986414313316,
+     "mean_exact": -0.040198207130831616,
+     "corr": 0.6745355368791246,
+     "mae": 0.0071721012930798566,
+     "share_pos_pred": 0.0129,
+     "share_pos_exact": 0.02335
+    },
+    "twenty_one_plus_three": {
+     "mean_pred": -0.03648887202143669,
+     "mean_exact": -0.03713360350436425,
+     "corr": 0.7205015608352698,
+     "mae": 0.00707096209129389,
+     "share_pos_pred": 0.01685,
+     "share_pos_exact": 0.02575
+    },
+    "crazy_7": {
+     "mean_pred": -0.055937401950359344,
+     "mean_exact": -0.05746217664805206,
+     "corr": 0.9932793865842448,
+     "mae": 0.01793090591960804,
+     "share_pos_pred": 0.33935,
+     "share_pos_exact": 0.3368
+    },
+    "bust_bonus": {
+     "mean_pred": -0.056669384241104126,
+     "mean_exact": -0.05643667375476864,
+     "corr": 0.9808440270491151,
+     "mae": 0.007801728958881384,
+     "share_pos_pred": 0.12885,
+     "share_pos_exact": 0.12565
+    },
+    "insurance": {
+     "mean_pred": -0.07602490484714508,
+     "mean_exact": -0.07601192298164228,
+     "corr": 0.9989445788427531,
+     "mae": 0.0018900662260702254,
+     "share_pos_pred": 0.09475,
+     "share_pos_exact": 0.0881
+    }
+   }
+  }
+ }
+}
