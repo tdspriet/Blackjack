@@ -23,3 +23,8 @@ packages = ["backend/onebj"]
 [tool.pytest.ini_options]
 testpaths = ["backend/tests"]
 addopts = "-q"
+
+[dependency-groups]
+dev = [
+    "httpx2>=2.16.0",
+]

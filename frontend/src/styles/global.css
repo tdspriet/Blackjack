@@ -473,6 +473,15 @@ table.data tr:last-child td {
   color: var(--muted);
   font-size: 12px;
 }
+.empty code {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text);
+  background: var(--panel-3);
+  padding: 1px 5px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
 
 /* tooltips for charts */
 .viz-tip {

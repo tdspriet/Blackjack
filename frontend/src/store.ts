@@ -149,14 +149,14 @@ export const useLab = create<LabState>((set, get) => {
       }
       case 'sim_progress': {
         const cur = get().sim
-        const running = msg.done < msg.total
+        const running = msg.finished !== undefined ? !msg.finished : msg.done < msg.total
         set({
           sim: {
             done: msg.done,
             total: msg.total,
             metrics: msg.metrics,
             running,
-            agent: cur?.agent ?? get().state?.ai.agent ?? '',
+            agent: msg.agent ?? cur?.agent ?? get().state?.ai.agent ?? '',
             startedAt: cur?.startedAt ?? Date.now(),
           },
           metricsSource: 'sim',

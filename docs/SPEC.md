@@ -336,7 +336,7 @@ WebSocket `GET /ws` — server → client messages:
              "bankroll": [[round, balance], ...], "side_bets": {"perfect_pairs": {"wagered": 40, "net": -3}, ...},
              "agreement_basic": 0.97, "max_drawdown": 210, "rounds_per_sec": null}}
 
-{"type": "sim_progress", "done": 5000, "total": 100000, "metrics": {...}}   // headless simulation
+{"type": "sim_progress", "done": 5000, "total": 100000, "metrics": {...}, "finished": false, "agent": "hilo"}   // headless simulation
 {"type": "error", "message": "..."}
 ```
 
@@ -359,6 +359,50 @@ Client → server:
 
 Dealer/crowd cards are streamed one by one (a `state` per card) with `delay_ms` pacing for animation in
 interactive/autoplay modes; zero pacing in `simulate`.
+
+### 6.1 Server as implemented (`onebj/server/`, authoritative details)
+
+* **Session** = one WebSocket connection: own seeded table (persistent shoe, bankroll enforced — `strict=True`),
+  agent, metrics. `?seed=N` on `/ws` makes it reproducible. Default agent: newest NN checkpoint, else `hilo`.
+* **hello**: `network` = `describe()` of the selected NN agent, else of the newest checkpoint (graph without
+  activations), `null` when no checkpoint exists. `agents` = `nn:<name>` per checkpoint (newest first), `hilo`,
+  `basic`. A new `hello` is sent after every `set_config` (new config) and after `set_agent` when the network changes.
+* **Streaming**: every decision produces the intermediate frames (round start with empty hands, each card of the deal,
+  each crowd / dealer / split-hand card, the hole-card reveal, the split itself) and then the final state. Intermediate
+  frames have `legal_actions: []`, `cashout_offer: null`, `round_net: null`, `ai.advice: null`, the transient `phase`
+  (`player` while dealing, `crowd`, `dealer`) and the metrics from before the decision. Pacing: 0.38 s per card when a
+  human plays, `clamp(0.45·delay_ms, 30, 600)` ms in autoplay; autoplay waits `0.8·delay_ms + 60` ms before a play
+  decision and `1.6·delay_ms + 150` ms before the next round. While frames are pending, `place_bets`, `action`,
+  `ai_step`, `new_shoe`, `set_config` are refused (`error` "Please wait — cards are still being dealt").
+* **game.side_bet_results**: lost side bets have `outcome: "lose"` (and `odds: 0`); a settled insurance bet is listed
+  as `{"bet": "insurance", "outcome": "dealer_blackjack" | "lose", "odds", "stake", "payout"}`.
+* **ai**: `last_trace` = trace of the agent's last decision (`ai_step` / autoplay; human moves don't change it; cleared
+  by `set_agent` / `reset`). `advice` (when on, not in autoplay) = the agent's trace for the pending decision, including
+  bet decisions (`extra.bets` = the recommended bets, scaled to the bankroll). Baseline traces: play `outputs` = per-action
+  EV per unit bet from the fresh-shoe solver (cash-out = offer/bet − 1), bet `outputs` = analytic EV per unit stake of
+  `main` (edge estimate), each side bet and insurance for the current composition; `reference.basic_strategy` always set.
+* **metrics** (session and simulation, `onebj.server.metrics.LabMetrics`, a superset of `onebj.sim.Metrics.to_dict`):
+  `edge` = main-game net / original main stakes (the official RTP definition); `ev_per_round` = total net per round
+  incl. side bets and insurance; `wins/losses/pushes/blackjacks/charlies` count main hands; `side_bets[name]` =
+  `{wagered, net, rtp, bets, wins, rtp_se}` plus an `insurance` row `{wagered, net, rtp}`; `agreement_basic` = share of
+  play decisions (human and AI in a session) equal to basic strategy; `bankroll` ≤ ~1000 points (stride doubles);
+  extra fields `std_per_round, main_rtp, edge_se, main_std_per_unit, doubles, splits, dealer_bust_rate, cashouts`;
+  a cashed-out hand counts as a win / loss / push by whether the offer was above / below / equal to its stake.
+* **simulate** runs on fresh tables with the session's config and an unlimited virtual bankroll (curve starts at
+  `bankroll.start`), split over up to 8 spawned worker processes (threads with `ONEBJ_SIM_PROCESSES=0`); the
+  session's table is not touched and stays playable. Messages: an immediate `sim_progress` with `done: 0`, then about
+  every 0.5 s, then a final one with `"finished": true` (also after `stop`, with `done < total`), then a `state`.
+  `sim_progress` also carries `agent`. Multi-worker bankroll curves interleave the workers (point k = sum of every
+  worker's k-th sample); `max_drawdown` is measured on that curve.
+* **Errors**: invalid JSON / unknown command / bad arguments / illegal moves → `{"type": "error", "message"}` followed
+  by a fresh `state` (re-sync); the socket is never closed. `set_config` applies `onebj.config.apply_patch` between
+  rounds: `crowd` / `limits` / `side_bets` / `bankroll` changes keep the shoe, `shoe` / `rules` changes rebuild the
+  table (bankroll and round number kept). Agents' bets are scaled down to the bankroll (side bets dropped first).
+* **Debug** (`ONEBJ_DEBUG=1`): `{"cmd": "debug_rig", "cards": ["8_of_hearts", "6s", ...]}` makes the next cards drawn
+  be these (swapped in from the unseen part of the shoe, so the composition is unchanged).
+* **REST** extras: `GET /api/health` → `{status, version, checkpoints, agents, debug}`. `GET /api/training/{name}` reads
+  `checkpoints/<name>.json` (`training_log` key, or the file itself if it is a list). With `frontend/dist` built, the app
+  serves it at `/` (SPA fallback) next to `/api`, `/ws`, `/cards`.
 
 ---
 

@@ -306,6 +306,10 @@ export interface SimProgressMsg {
   done: number
   total: number
   metrics: Metrics
+  /** True on the last message of a run (completed or stopped early); absent → done >= total. */
+  finished?: boolean
+  /** Agent being simulated. */
+  agent?: string
 }
 
 export interface ErrorMsg {

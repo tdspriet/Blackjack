@@ -100,7 +100,13 @@ function NetworkTab() {
           </span>
           <span className="muted small">{trace ? (useAdvice ? 'advice' : 'last decision') : ''}</span>
         </div>
-        {net ? <NetworkGraph net={net} trace={isNN ? trace : null} /> : <div className="empty">No network description from the backend.</div>}
+        {net ? (
+          <NetworkGraph net={net} trace={isNN ? trace : null} />
+        ) : (
+          <div className="empty">
+            No trained network yet — run <code>uv run python -m onebj.ai.train</code>
+          </div>
+        )}
       </div>
 
       <div className="section">
