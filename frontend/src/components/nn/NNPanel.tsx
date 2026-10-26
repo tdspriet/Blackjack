@@ -95,7 +95,7 @@ function NetworkTab() {
     <>
       <div className="section">
         <div className="section-head">
-          <span className="section-title" title="Top-K strongest weights per layer pair. Node colour = activation (blue negative, orange positive); edge brightness = |weight × activation|.">
+          <span className="section-title" title="Top-K strongest weights per layer pair. Node colour = activation (red negative, green positive); edge brightness = |weight × activation|.">
             Activations
           </span>
           <span className="muted small">{trace ? (useAdvice ? 'advice' : 'last decision') : ''}</span>

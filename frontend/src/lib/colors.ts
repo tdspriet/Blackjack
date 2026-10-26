@@ -1,7 +1,7 @@
-/** Diverging scale for activations: blue (−) ↔ neutral ↔ orange (+). t in [-1, 1]. */
-const NEG = [57, 135, 229] // #3987e5
+/** Diverging scale: red (−) ↔ neutral ↔ green (+). t in [-1, 1]. */
+const NEG = [239, 107, 107] // --neg
 const MID = [44, 44, 52] // neutral on dark surface
-const POS = [236, 133, 64] // warm orange
+const POS = [60, 207, 127] // --pos
 
 export function diverging(t: number): string {
   const x = Math.max(-1, Math.min(1, isFinite(t) ? t : 0))

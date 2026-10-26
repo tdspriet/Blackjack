@@ -170,7 +170,7 @@ export function NetworkGraph({ net, trace }: { net: NetworkDescription; trace: T
                 y1={e.y1}
                 x2={e.x2}
                 y2={e.y2}
-                stroke={pos ? 'var(--orange)' : 'var(--blue)'}
+                stroke={pos ? 'var(--pos)' : 'var(--neg)'}
                 strokeWidth={e.flow > 0.6 ? 1.2 : 0.7}
                 strokeOpacity={op}
               />
